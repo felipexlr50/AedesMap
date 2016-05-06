@@ -16,13 +16,18 @@
 
 package com.example.felipe.aedesmap.model;
 
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;
 
-public class MyItem implements ClusterItem {
-    private final LatLng mPosition;
 
-    public MyItem(double lat, double lng) {
+public class MyItem  implements ClusterItem {
+
+    private final LatLng mPosition;
+    public final int customIcon;
+
+    public MyItem(double lat, double lng, int customIcon) {
+        this.customIcon = customIcon;
         mPosition = new LatLng(lat, lng);
     }
 
@@ -30,4 +35,7 @@ public class MyItem implements ClusterItem {
     public LatLng getPosition() {
         return mPosition;
     }
-}
+
+
+
+    }

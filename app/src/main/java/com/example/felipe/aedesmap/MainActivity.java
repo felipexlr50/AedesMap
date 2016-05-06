@@ -5,12 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.drawable.Icon;
-import android.location.GpsStatus;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,12 +19,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
-
-
-import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -99,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) !=
                 PackageManager.PERMISSION_GRANTED) {
         }
-       // locationManager.removeUpdates(lListerner);
+
     }
 
     public void getGPSposition(LocationManager locationManager, LocationListener lListerner){
@@ -113,7 +106,9 @@ public class MainActivity extends AppCompatActivity {
                 TextView positionTela = (TextView) findViewById(R.id.textPosition);
                  lat = location.getLatitude();
                  lng = location.getLongitude();
-                positionTela.setText(lat+" | "+lng);
+                positionTela.setText(lat + " | " + lng);
+                Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
+
 
             }
 
