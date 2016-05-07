@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickGetPosition(View v) {
         getGPSposition(locationManager, lListerner);
+        Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
     }
 
     public void insertPosition() {
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                  lat = location.getLatitude();
                  lng = location.getLongitude();
                 positionTela.setText(lat + " | " + lng);
-                Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
+
 
 
             }
