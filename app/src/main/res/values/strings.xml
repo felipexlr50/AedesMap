@@ -4,4 +4,11 @@
     <string name="title_activity_google_maps">Map</string>
     <string name="title_activity_sqlview">SQLView</string>
     <string name="google_maps_apiv2">AIzaSyCU_1j9bnUQ6aR49Z8CNkRM5jWpWCSm0as</string>
+    <string name="title_activity_menu">menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="camera_icon">camera icon</string>
+    <string name="aedesmap_icon">AedesMap icon</string>
+    <string name="aedesmap_menu">AedesMap Menu</string>
 </resources>

@@ -8,7 +8,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -21,6 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
+
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -135,6 +140,17 @@ public class MainActivity extends AppCompatActivity {
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, lListerner);
 
+
+    }
+
+    public void onCreateCamera(View v){
+
+        File picDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+        File imagem = new File(picDir,"foto.jpg");
+
+        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagem));
+        startActivity(camera);
 
     }
 

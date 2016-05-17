@@ -79,6 +79,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
             Bitmap icon = mIconGenerator.makeIcon();
             markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon));
 
+
         }
 
         @Override
