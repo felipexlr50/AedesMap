@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.felipe.aedesmap.menu"
+    tools:context=".MenuActivity"
     tools:showIn="@layout/app_bar_menu">
 
     <ImageButton
@@ -20,5 +20,16 @@
         android:contentDescription="@string/camera_icon"
         android:layout_gravity="center"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onCreateCamera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LatLng"
+        android:id="@+id/tfLatLng"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton" />
 </RelativeLayout>

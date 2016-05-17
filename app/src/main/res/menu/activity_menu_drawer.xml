@@ -5,11 +5,16 @@
         <item
             android:id="@+id/nav_add"
             android:icon="@drawable/ic_add"
-            android:title="Inserir Ponto" />
+            android:title="Inserir Posição"/>
         <item
             android:id="@+id/nav_mapa"
             android:icon="@drawable/ic_mapa"
             android:title="Abrir Mapa" />
+
+        <item
+            android:id="@+id/nav_getPos"
+            android:icon="@drawable/ic_add"
+            android:title="Pegar Posição" />
 
     </group>
 
