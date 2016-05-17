@@ -1,3 +1,4 @@
+/*
 package com.example.felipe.aedesmap;
 
 import android.content.ContentValues;
@@ -177,3 +178,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+*/
