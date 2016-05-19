@@ -153,10 +153,13 @@ public class MenuActivity extends AppCompatActivity
 
         if(getLat() ==0|| getLng() ==0){
             Toast.makeText(MenuActivity.this, "GPS ainda sem sinal", Toast.LENGTH_SHORT).show();
-        } else if((getLat() >89.999999|| getLat() <-89.999999)||(getLng() >179.9999999|| getLng() <-179.999999)){
-            Toast.makeText(MenuActivity.this, "Valor do GPS impreciso!", Toast.LENGTH_SHORT).show();
+        }
 
-        } else {
+        else if((getLat() >90|| getLat() <-90)||(getLng() >180|| getLng() <-180)){
+            Toast.makeText(MenuActivity.this, "Valor do GPS impreciso!", Toast.LENGTH_SHORT).show();
+        }
+
+        else {
             cv.put(dao.LGN, getLng());
             cv.put(dao.LAT, getLat());
             cv.put(dao.DATA_IN, format.format(dateAtual.getTime()));
@@ -168,7 +171,6 @@ public class MenuActivity extends AppCompatActivity
                 Toast.makeText(this, "Ponto salvo", Toast.LENGTH_LONG).show();
 
             db.close();
-
         }
 
     }
