@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AedesMap</string>
+    <string name="action_settings">Configurações</string>
+    <string name="aedesmap_icon">Icone do AedesMap</string>
+    <string name="aedesmap_menu">Menu do AedesMap</string>
+    <string name="camera_icon">icone da câmera</string>
+    <string name="navigation_drawer_close">Fechar gaveta de navegação</string>
+    <string name="navigation_drawer_open">Abrir gaveta de navegação</string>
+    <string name="title_activity_google_maps">Mapa</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_getPosition">Pegar Posição</string>
+    <string name="title_insertPosition">Inserir Posição</string>
+    <string name="title_openMap">Abrir Mapa</string>
+</resources>
