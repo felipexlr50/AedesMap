@@ -30,6 +30,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback {
         try {
             camera.setPreviewDisplay(holder);
             camera.startPreview();
+
         } catch (IOException e) {
             Log.d("cameraErro","Deu Algo errado na camera: +"+e.getMessage());
            // e.printStackTrace();

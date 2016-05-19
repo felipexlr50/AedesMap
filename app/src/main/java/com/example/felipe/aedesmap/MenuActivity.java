@@ -1,21 +1,24 @@
 package com.example.felipe.aedesmap;
 
+import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.ContextWrapper;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -33,6 +36,10 @@ import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -46,6 +53,7 @@ public class MenuActivity extends AppCompatActivity
     private double lng;
     private LocationListener lListerner;
     private LocationManager locationManager;
+    private boolean isGPSSignalOn=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +78,8 @@ public class MenuActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        gpsMessage();
     }
 
     public void onCreateCamera(View v){
@@ -78,7 +88,7 @@ public class MenuActivity extends AppCompatActivity
         File imagem = new File(picDir,"foto.jpg");
 
         Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagem));
+        camera.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(this, "com.example.felipe.aedesmap", imagem));
         startActivity(camera);
 
     }
@@ -141,20 +151,24 @@ public class MenuActivity extends AppCompatActivity
         //db.execSQL("delete from " + dao.TBL);
         long result = 0;
 
-        cv.put(dao.LGN, lng);
-        cv.put(dao.LAT, lat);
-        cv.put(dao.DATA_IN, format.format(dateAtual.getTime()));
-        result = db.insert(dao.TBL, null, cv);
+        if(getLat() ==0|| getLng() ==0){
+            Toast.makeText(MenuActivity.this, "GPS ainda sem sinal", Toast.LENGTH_SHORT).show();
+        } else if((getLat() >89.999999|| getLat() <-89.999999)||(getLng() >179.9999999|| getLng() <-179.999999)){
+            Toast.makeText(MenuActivity.this, "Valor do GPS impreciso!", Toast.LENGTH_SHORT).show();
 
-        if (result == -1) {
-            Toast.makeText(this, "Nao foi salvo", Toast.LENGTH_LONG).show();
-        } else
-            Toast.makeText(this, "Ponto salvo", Toast.LENGTH_LONG).show();
+        } else {
+            cv.put(dao.LGN, getLng());
+            cv.put(dao.LAT, getLat());
+            cv.put(dao.DATA_IN, format.format(dateAtual.getTime()));
+            result = db.insert(dao.TBL, null, cv);
 
-        db.close();
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) !=
-                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) !=
-                PackageManager.PERMISSION_GRANTED) {
+            if (result == -1) {
+                Toast.makeText(this, "Nao foi salvo", Toast.LENGTH_LONG).show();
+            } else
+                Toast.makeText(this, "Ponto salvo", Toast.LENGTH_LONG).show();
+
+            db.close();
+
         }
 
     }
@@ -168,9 +182,20 @@ public class MenuActivity extends AppCompatActivity
             public void onLocationChanged(Location location) {
 
                 TextView positionTela = (TextView) findViewById(R.id.tfLatLng);
-                lat = location.getLatitude();
-                lng = location.getLongitude();
-                positionTela.setText(lat + " | " + lng);
+                setLat(location.getLatitude());
+                setLng(location.getLongitude());
+                positionTela.setText(getLat() + " | " + getLng());
+
+                if(getLat() ==0|| getLng() ==0){
+                    isGPSSignalOn=false;
+                }
+                else{
+                    isGPSSignalOn=true;
+                }
+
+                if(!isGPSSignalOn){
+                    Toast.makeText(MenuActivity.this, "Procurando posição", Toast.LENGTH_SHORT).show();
+                }
 
             }
 
@@ -198,6 +223,68 @@ public class MenuActivity extends AppCompatActivity
 
 
 
+    }
+
+    private String saveToInternalStorage(Bitmap bitmapImage){
+        ContextWrapper cw = new ContextWrapper(getApplicationContext());
+        // path to /data/data/yourapp/app_data/imageDir
+        File directory = cw.getDir("/data/data/AedesMap/app_data/imageDir", Context.MODE_PRIVATE);
+        // Create imageDir
+        File mypath=new File(directory,"profile.jpg");
+
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(mypath);
+            // Use the compress method on the BitMap object to write image to the OutputStream
+            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return directory.getAbsolutePath();
+    }
+
+    private void loadImageFromStorage(String path)
+    {
+
+        try {
+            File f=new File(path, "profile.jpg");
+            Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
+            //ImageView img=(ImageView)findViewById(R.id.imgPicker);
+            //img.setImageBitmap(b);
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void gpsMessage(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle("Alerta");
+
+        builder.setMessage("Ative o GPS antes de usar!!")
+                .setCancelable(false)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
 
@@ -229,5 +316,22 @@ public class MenuActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
     }
 }

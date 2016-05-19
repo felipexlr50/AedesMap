@@ -16,12 +16,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton"
-        android:src="@drawable/ic_camera"
+        android:src="@drawable/ic_camera2"
         android:contentDescription="@string/camera_icon"
         android:layout_gravity="center"
-        android:layout_centerVertical="true"
+        android:onClick="onCreateCamera"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="onCreateCamera" />
+        android:layout_marginTop="75dp"
+        android:clickable="true"
+        android:cropToPadding="false" />
 
     <TextView
         android:layout_width="wrap_content"
