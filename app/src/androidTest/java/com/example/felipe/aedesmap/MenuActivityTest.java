@@ -44,5 +44,6 @@ public class MenuActivityTest extends ActivityInstrumentationTestCase2<MenuActiv
     @SmallTest
     public void testLngValues(){
         assertTrue(activity.getLng()<180||activity.getLng()>-180);
+
     }
 }
