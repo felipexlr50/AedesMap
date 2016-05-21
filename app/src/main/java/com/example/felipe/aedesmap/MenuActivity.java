@@ -13,6 +13,7 @@ import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -88,7 +89,7 @@ public class MenuActivity extends AppCompatActivity
         File imagem = new File(picDir,"foto.jpg");
 
         Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        camera.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(this, "com.example.felipe.aedesmap", imagem));
+        camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagem));
         startActivity(camera);
 
     }
