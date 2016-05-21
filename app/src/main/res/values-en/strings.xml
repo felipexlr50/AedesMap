@@ -12,4 +12,5 @@
     <string name="title_getPosition">Get Position</string>
     <string name="title_insertPosition">Insert Position</string>
     <string name="title_openMap">Open Map</string>
+    <string name="actionBarSettings">Settings</string>
 </resources>

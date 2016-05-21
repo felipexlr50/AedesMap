@@ -137,7 +137,18 @@ public class MenuActivity extends AppCompatActivity
 
     public void onClickGetPosition() {
         getGPSposition(locationManager, lListerner);
-        Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
+        //Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
+        Log.d("boolean",isGPSSignalOn+"");
+        if(getLat()==0 || getLng()==0){
+            isGPSSignalOn=false;
+        }
+        else{
+            isGPSSignalOn=true;
+        }
+
+        if(!isGPSSignalOn){
+            Toast.makeText(MenuActivity.this, "Procurando Posição...", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void insertPosition() {
@@ -187,8 +198,9 @@ public class MenuActivity extends AppCompatActivity
                 setLat(location.getLatitude());
                 setLng(location.getLongitude());
                 positionTela.setText(getLat() + " | " + getLng());
+                Log.d("boolean",isGPSSignalOn+"");
 
-                if(getLat() ==0|| getLng() ==0){
+                if(getLat()==0 || getLng()==0){
                     isGPSSignalOn=false;
                 }
                 else{
@@ -196,7 +208,7 @@ public class MenuActivity extends AppCompatActivity
                 }
 
                 if(!isGPSSignalOn){
-                    Toast.makeText(MenuActivity.this, "Procurando posição", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MenuActivity.this, "Procurando Posição...", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -311,9 +323,6 @@ public class MenuActivity extends AppCompatActivity
             onClickGetPosition();
         }
 
-        else{
-            Toast.makeText(this,"nada",Toast.LENGTH_SHORT);
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

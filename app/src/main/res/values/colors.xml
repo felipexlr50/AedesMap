@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorCustomToolsBar">#ff1414</color>
     <color name="colorCustomActionBar">#e21212</color>
+    <color name="colorBackground">#d6d7d7</color>
 </resources>
