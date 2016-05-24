@@ -13,4 +13,16 @@
     <string name="title_insertPosition">Insert Position</string>
     <string name="title_openMap">Open Map</string>
     <string name="actionBarSettings">Settings</string>
+    <string name="infoText1">The colaborative app for registering and sharing potential Aedes aegypti breeding sites</string>
+    <string name="infoText2">The Aedes aegypti is able to proliferate at any place with clean standing water.  Some of the potential breeding sites you should pay attention to are:</string>
+    <string name="infoText3">- Old tires</string>
+    <string name="infoText4">- Plant vases</string>
+    <string name="infoText5">- Empty bottles</string>
+    <string name="infoText6">- Uncovered pools</string>
+    <string name="infoText7">- Dumpsters</string>
+    <string name="infoText8">3 easy steps to fight the Aedes aegypti:</string>
+    <string name="infoText9">1. Download AedesMap</string>
+    <string name="infoText10">2. Register any potential breeding sites you find</string>
+    <string name="infoText11">3. Check the map for  other users entries</string>
+    <string name="title_info">Infomation</string>
 </resources>
