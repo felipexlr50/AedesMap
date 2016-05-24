@@ -14,4 +14,18 @@
     <string name="title_openMap">Abrir Mapa</string>
     <string name="title_getPosition">Pegar Posição</string>
     <string name="actionBarSettings">Configurações</string>
+    <string name="aedesmap">AedesMap</string>
+    <string name="infoText1">O aplicativo colaborativo para registrar e compartilhar possíveis criadouros do Aedes aegypti.</string>
+    <string name="image_info">image info</string>
+    <string name="infoText2">O Aedes aegypti é capaz de se proliferar em qualquer lugar com água limpa e parada. Alguns dos possíveis focos de proliferação aos quais você deve prestar atenção são:</string>
+    <string name="infoText3">- Pneu Velho</string>
+    <string name="infoText4">- Vasos de planta</string>
+    <string name="infoText5">- Garrafas vazias</string>
+    <string name="infoText6">- Piscinas descobertas</string>
+    <string name="infoText7">- Lixeiras</string>
+    <string name="image_info_2">image info 2</string>
+    <string name="infoText8">3 passos simples para combater o Aedes aegypti:</string>
+    <string name="infoText9">1. Baixe o AedesMap</string>
+    <string name="infoText10">2. Registre qualquer foco do mosquito que você encontrar</string>
+    <string name="infoText11">3. Veja no mapa os registros de outros usuários</string>
 </resources>

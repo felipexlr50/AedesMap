@@ -126,7 +126,9 @@ public class MenuActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-
+    public void onClickOpenInfo(){
+        startActivity(new Intent(this,InfoActivity.class));
+    }
 
     public void onClickOpenMap() {
         startActivity(new Intent(this, ClusteringMap.class));
@@ -251,7 +253,7 @@ public class MenuActivity extends AppCompatActivity
         try {
             fos = new FileOutputStream(mypath);
             // Use the compress method on the BitMap object to write image to the OutputStream
-            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
+            bitmapImage.compress(Bitmap.CompressFormat.JPEG, 100, fos);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -322,6 +324,11 @@ public class MenuActivity extends AppCompatActivity
         } else if(id == R.id.nav_getPos){
 
             onClickGetPosition();
+
+        } else if(id == R.id.nav_info){
+
+            onClickOpenInfo();
+
         }
 
 

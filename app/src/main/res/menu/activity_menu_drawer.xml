@@ -16,6 +16,11 @@
             android:icon="@drawable/ic_insert"
             android:title="@string/title_getPosition" />
 
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_insert"
+            android:title="Info" />
+
     </group>
 
 
