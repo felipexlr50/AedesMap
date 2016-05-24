@@ -99,6 +99,8 @@ public class MenuActivity extends AppCompatActivity
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         imageDAO = new ImageDAO(this);
         Calendar dateAtual = Calendar.getInstance();
+        SQLiteDatabase db = imageDAO.getWritableDatabase();
+        int result=0;
         DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
         if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
             Bitmap photo = (Bitmap) data.getExtras().get("data");
@@ -106,8 +108,17 @@ public class MenuActivity extends AppCompatActivity
             photo.compress(Bitmap.CompressFormat.PNG, 100, stream);
             byte[] byteArray = stream.toByteArray();
 
-            imageDAO.insert(byteArray,lat,lng,format.format(dateAtual.getTime()));
-            insertPosition();
+
+            result = imageDAO.insert(byteArray,lat,lng,format.format(dateAtual.getTime()),db);
+
+            if (result == -1) {
+                Toast.makeText(this, "Nao foi salvo", Toast.LENGTH_LONG).show();
+            } else
+                Toast.makeText(this, "Imagem salva", Toast.LENGTH_LONG).show();
+                insertPosition();
+
+            db.close();
+
 
         }
     }
