@@ -34,8 +34,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.felipe.aedesmap.DAO.BaseDAO;
+import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -50,11 +52,13 @@ public class MenuActivity extends AppCompatActivity
 
     DrawerLayout drawer;
     private BaseDAO dao;
+    private ImageDAO imageDAO;
     private double lat;
     private double lng;
     private LocationListener lListerner;
     private LocationManager locationManager;
     private boolean isGPSSignalOn=false;
+    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,13 +89,27 @@ public class MenuActivity extends AppCompatActivity
 
     public void onCreateCamera(View v){
 
-        File picDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-        File imagem = new File(picDir,"foto.jpg");
-
         Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imagem));
-        startActivity(camera);
 
+        startActivityForResult(camera,CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        imageDAO = new ImageDAO(this);
+        Calendar dateAtual = Calendar.getInstance();
+        DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
+        if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
+            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            photo.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            byte[] byteArray = stream.toByteArray();
+
+            imageDAO.insert(byteArray,lat,lng,format.format(dateAtual.getTime()));
+            insertPosition();
+
+        }
     }
 
     @Override
