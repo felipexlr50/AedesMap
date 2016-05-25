@@ -19,15 +19,11 @@ package com.example.felipe.aedesmap.MAP;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
+import android.graphics.BitmapFactory;
 import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-
-import com.example.felipe.aedesmap.DAO.BaseDAO;
+import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -39,18 +35,13 @@ import com.example.felipe.aedesmap.model.MyItem;
 import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 import com.google.maps.android.ui.IconGenerator;
 
-import java.util.ArrayList;
-import java.util.List;
 
-/**
- * Simple activity demonstrating ClusterManager.
- */
+
 public class ClusteringMap extends BaseDemoActivity implements ClusterManager.OnClusterClickListener<MyItem>
         , ClusterManager.OnClusterInfoWindowClickListener<MyItem>
         , ClusterManager.OnClusterItemClickListener<MyItem>
         , ClusterManager.OnClusterItemInfoWindowClickListener<MyItem> {
 
-    private BaseDAO dao;
     private ClusterManager<MyItem> mClusterManager;
 
 
@@ -76,7 +67,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
             // Draw a single person.
             // Set the info window to show their name.
             //mImageView.setImageResource(R.drawable.mosquitoicon3);
-            Bitmap icon = mIconGenerator.makeIcon();
+            //Bitmap icon = mIconGenerator.makeIcon();
             markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
             super.onBeforeClusterItemRendered(myItem,markerOptions);
         }
@@ -99,7 +90,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
 
     @Override
     public void onClusterInfoWindowClick(Cluster<MyItem> cluster) {
-        // Does nothing, but you could go to a list of the users.
+
     }
 
     @Override
@@ -137,19 +128,25 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         double lat;
         double lng;
 
-        dao = new BaseDAO(this);
-        SQLiteDatabase db = dao.getWritableDatabase();
+       // BaseDAO dao = new BaseDAO(this);
+        ImageDAO imageDao = new ImageDAO(this);
+        SQLiteDatabase db = imageDao.getWritableDatabase();
 
-        String querry = "select * from position";
+        String querry = "select * from "+ImageDAO.TBL;
 
         Cursor c = db.rawQuery(querry,null);
 
         if(c.moveToFirst()){
+
             do {
-                lat = c.getDouble(c.getColumnIndex(dao.LAT));
-                lng = c.getDouble(c.getColumnIndex(dao.LGN));
+                byte[] bytes=c.getBlob(c.getColumnIndex(ImageDAO.IMGBLOB));
+                lat = c.getDouble(c.getColumnIndex(ImageDAO.LAT));
+                lng = c.getDouble(c.getColumnIndex(ImageDAO.LGN));
                 Log.d("banco", lat + " - " + lng);
-                MyItem itens = new MyItem(lat, lng, R.drawable.mosquitoicon);
+
+                Bitmap imagemBD = BitmapFactory.decodeByteArray(bytes, 0, 0);
+
+                MyItem itens = new MyItem(lat, lng,imagemBD);
                 mClusterManager.addItem(itens);
             }while(c.moveToNext());
         }

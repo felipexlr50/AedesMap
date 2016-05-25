@@ -17,6 +17,8 @@
 package com.example.felipe.aedesmap.model;
 
 
+import android.graphics.Bitmap;
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;
 
@@ -24,18 +26,24 @@ import com.google.maps.android.clustering.ClusterItem;
 public class MyItem  implements ClusterItem {
 
     private final LatLng mPosition;
-    public final int customIcon;
+    private Bitmap image;
 
-    public MyItem(double lat, double lng, int customIcon) {
-        this.customIcon = customIcon;
+    public MyItem(double lat, double lng, Bitmap image) {
+        this.setImage(image);
         mPosition = new LatLng(lat, lng);
     }
 
     @Override
     public LatLng getPosition() {
-        return mPosition;
+         return mPosition;
     }
 
 
-
+    public Bitmap getImage() {
+        return image;
     }
+
+    public void setImage(Bitmap image) {
+        this.image = image;
+    }
+}
