@@ -19,14 +19,14 @@ public class ImageDAO extends SQLiteOpenHelper {
     public static final String LGN = "longitude";
     public static final String DATA_IN = "data_inserida";
 
-    private static final String DATABASE_NAME = "geoPosition.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final String DATABASE_NAME = "imagem.db";
+    private static final int DATABASE_VERSION = 3;
 
     private static final String CREATE_TABLE = "CREATE TABLE "+TBL+"(\n" +
             COD+" INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
             IMGBLOB+" BLOB,\n" +
-            LGN+" REAL,\n" +
             LAT+" REAL,\n" +
+            LGN+" REAL,\n" +
             DATA_IN+" DATETIME\n" +
             ")";
 
@@ -58,8 +58,8 @@ public class ImageDAO extends SQLiteOpenHelper {
         cv.put(LAT,lat);
         cv.put(LGN,lng);
         cv.put(DATA_IN,dataInserida);
-        Log.e("inserted", "inserted");
-        return (int) db.insert(TBL,IMGBLOB,cv);
+        Log.d("byte", "inserted");
+        return (int) db.insert(TBL,null,cv);
 
 
 

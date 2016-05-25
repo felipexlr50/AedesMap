@@ -102,20 +102,29 @@ public class MenuActivity extends AppCompatActivity
         SQLiteDatabase db = imageDAO.getWritableDatabase();
         int result=0;
         DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
+
         if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
+
             Bitmap photo = (Bitmap) data.getExtras().get("data");
+
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
+
             photo.compress(Bitmap.CompressFormat.PNG, 100, stream);
+
             byte[] byteArray = stream.toByteArray();
+            Log.d("Byte",byteArray.toString());
 
 
             result = imageDAO.insert(byteArray,lat,lng,format.format(dateAtual.getTime()),db);
 
             if (result == -1) {
                 Toast.makeText(this, "Nao foi salvo", Toast.LENGTH_LONG).show();
+                Log.d("byte","Imagem nao salva");
             } else
-                Toast.makeText(this, "Imagem salva", Toast.LENGTH_LONG).show();
                 insertPosition();
+                Toast.makeText(this, "Imagem salva", Toast.LENGTH_LONG).show();
+                Log.d("byte","Imagem salva");
+
 
             db.close();
 
@@ -271,45 +280,6 @@ public class MenuActivity extends AppCompatActivity
 
     }
 
-    private String saveToInternalStorage(Bitmap bitmapImage){
-        ContextWrapper cw = new ContextWrapper(getApplicationContext());
-        // path to /data/data/yourapp/app_data/imageDir
-        File directory = cw.getDir("/data/data/AedesMap/app_data/imageDir", Context.MODE_PRIVATE);
-        // Create imageDir
-        File mypath=new File(directory,"profile.jpg");
-
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(mypath);
-            // Use the compress method on the BitMap object to write image to the OutputStream
-            bitmapImage.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                fos.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return directory.getAbsolutePath();
-    }
-
-    private void loadImageFromStorage(String path)
-    {
-
-        try {
-            File f=new File(path, "profile.jpg");
-            Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
-            //ImageView img=(ImageView)findViewById(R.id.imgPicker);
-            //img.setImageBitmap(b);
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-
-    }
 
     private void gpsMessage(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -332,8 +302,6 @@ public class MenuActivity extends AppCompatActivity
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
-
-
 
 
     @Override

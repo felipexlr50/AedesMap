@@ -75,11 +75,10 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         protected void onBeforeClusterItemRendered(MyItem myItem, MarkerOptions markerOptions) {
             // Draw a single person.
             // Set the info window to show their name.
-            mImageView.setImageResource(R.drawable.mosquitoicon);
+            //mImageView.setImageResource(R.drawable.mosquitoicon3);
             Bitmap icon = mIconGenerator.makeIcon();
-            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon));
-
-
+            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
+            super.onBeforeClusterItemRendered(myItem,markerOptions);
         }
 
         @Override
@@ -105,7 +104,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
 
     @Override
     public boolean onClusterItemClick(MyItem item) {
-        // Does nothing, but you could go into the user's profile page, for example.
+
         return false;
     }
 
@@ -117,8 +116,8 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
     @Override
     public void startDemo() {
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-23.086057, -47.212235), 14));
-        mClusterManager = new ClusterManager<MyItem>(this, getMap());
-        mClusterManager.setRenderer(new CustomIconRenderer());
+        //mClusterManager = new ClusterManager<MyItem>(this, getMap());
+        //mClusterManager.setRenderer(new CustomIconRenderer());
 
         mClusterManager = new ClusterManager<MyItem>(this, getMap());
         getMap().setOnCameraChangeListener(mClusterManager);
@@ -128,6 +127,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         mClusterManager.setOnClusterInfoWindowClickListener(this);
         mClusterManager.setOnClusterItemClickListener(this);
         mClusterManager.setOnClusterItemInfoWindowClickListener(this);
+        mClusterManager.setRenderer(new CustomIconRenderer());
         mClusterManager.cluster();
 
         addItens();
