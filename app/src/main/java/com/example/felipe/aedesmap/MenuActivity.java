@@ -88,11 +88,16 @@ public class MenuActivity extends AppCompatActivity
     }
 
     public void onCreateCamera(View v){
+       // if(lat!=0 || lng!=0) {
 
-        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-        startActivityForResult(camera,CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+            Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
+            startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+       // }
+       // else{
+            //Toast.makeText(MenuActivity.this, this.getString(R.string.cameraWarning), Toast.LENGTH_SHORT).show();
+       // }
     }
 
     @Override
@@ -109,7 +114,10 @@ public class MenuActivity extends AppCompatActivity
 
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
-            photo.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            if (photo != null) {
+                photo.compress(Bitmap.CompressFormat.JPEG, 60, stream);
+
+            }
 
             byte[] byteArray = stream.toByteArray();
             Log.d("Byte",byteArray.toString());
@@ -118,11 +126,11 @@ public class MenuActivity extends AppCompatActivity
             result = imageDAO.insert(byteArray,lat,lng,format.format(dateAtual.getTime()),db);
 
             if (result == -1) {
-                Toast.makeText(this, "Nao foi salvo", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
                 Log.d("byte","Imagem nao salva");
             } else
                 insertPosition();
-                Toast.makeText(this, "Imagem salva", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
                 Log.d("byte","Imagem salva");
 
 
@@ -204,11 +212,11 @@ public class MenuActivity extends AppCompatActivity
         long result = 0;
 
         if(getLat() ==0|| getLng() ==0){
-            Toast.makeText(MenuActivity.this, "GPS ainda sem sinal", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MenuActivity.this, this.getString(R.string.noGPSSignal), Toast.LENGTH_SHORT).show();
         }
 
         else if((getLat() >90|| getLat() <-90)||(getLng() >180|| getLng() <-180)){
-            Toast.makeText(MenuActivity.this, "Valor do GPS impreciso!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MenuActivity.this, this.getString(R.string.wrongGPSValue), Toast.LENGTH_SHORT).show();
         }
 
         else {
@@ -218,9 +226,9 @@ public class MenuActivity extends AppCompatActivity
             result = db.insert(dao.TBL, null, cv);
 
             if (result == -1) {
-                Toast.makeText(this, "Nao foi salvo", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, this.getString(R.string.positionNotsaved), Toast.LENGTH_LONG).show();
             } else
-                Toast.makeText(this, "Ponto salvo", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, this.getString(R.string.positionSaved), Toast.LENGTH_LONG).show();
 
             db.close();
         }

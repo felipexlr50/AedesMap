@@ -20,6 +20,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -35,6 +36,8 @@ import com.example.felipe.aedesmap.model.MyItem;
 import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 import com.google.maps.android.ui.IconGenerator;
 
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 
 public class ClusteringMap extends BaseDemoActivity implements ClusterManager.OnClusterClickListener<MyItem>
@@ -66,9 +69,11 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         protected void onBeforeClusterItemRendered(MyItem myItem, MarkerOptions markerOptions) {
             // Draw a single person.
             // Set the info window to show their name.
-            //mImageView.setImageResource(R.drawable.mosquitoicon3);
-            //Bitmap icon = mIconGenerator.makeIcon();
-            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
+
+            mImageView.setImageBitmap(myItem.getImage());
+            Bitmap icon = mIconGenerator.makeIcon();
+            markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon));
+            //markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
             super.onBeforeClusterItemRendered(myItem,markerOptions);
         }
 
@@ -144,7 +149,10 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
                 lng = c.getDouble(c.getColumnIndex(ImageDAO.LGN));
                 Log.d("banco", lat + " - " + lng);
 
-                Bitmap imagemBD = BitmapFactory.decodeByteArray(bytes, 0, 0);
+                Bitmap imagemBD = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    Log.d("image",new String(bytes, StandardCharsets.UTF_8));
+                }
 
                 MyItem itens = new MyItem(lat, lng,imagemBD);
                 mClusterManager.addItem(itens);

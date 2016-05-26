@@ -29,4 +29,12 @@
     <string name="infoText10">2. Registre qualquer foco do mosquito que você encontrar</string>
     <string name="infoText11">3. Veja no mapa os registros de outros usuários</string>
     <string name="title_info">Infomações</string>
+    <string name="positionSaved">Ponto salvo!</string>
+    <string name="positionNotsaved">Ponto não salvo!</string>
+    <string name="wrongGPSValue">Valor de GPS errado!</string>
+    <string name="noGPSSignal">Ainda sem sinal!</string>
+    <string name="imageSaved">Imagem salva!</string>
+    <string name="imageNotSaved">Imagem não foi salva!</string>
+    <string name="cameraWarning">Espere o sinal do GPS!</string>
+
 </resources>
