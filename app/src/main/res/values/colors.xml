@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorCustomToolsBar">#ff1414</color>
-    <color name="colorCustomActionBar">#e21212</color>
+    <color name="colorCustomToolsBar">#d64949</color>  //#ff1414
+    <color name="colorCustomActionBar">#ff5757</color> //#e21212
     <color name="colorBackground">#d6d7d7</color>
 </resources>

@@ -25,4 +25,15 @@
     <string name="infoText10">2. Register any potential breeding sites you find</string>
     <string name="infoText11">3. Check the map for  other users entries</string>
     <string name="title_info">Infomation</string>
+    <string name="cameraWarning">Wait for GPS signal!</string>
+
+    <string name="imageCanceled">Photo shot canceled!</string>
+    <string name="imageNotSaved">Image not saved!</string>
+    <string name="imageSaved">Image saved!</string>
+    <string name="noGPSSignal">GPS signal not ready yet!</string>
+    <string name="positionNotsaved">Position not saved!</string>
+    <string name="positionSaved">Position saved!</string>
+    <string name="wrongGPSValue">Wrong GPS signal</string>
+    <string name="gpsWarning2">Warning!</string>
+    <string name="gpsWarning3">Set GPS on before using!</string>
 </resources>

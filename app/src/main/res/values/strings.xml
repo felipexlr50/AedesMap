@@ -36,5 +36,9 @@
     <string name="imageSaved">Imagem salva!</string>
     <string name="imageNotSaved">Imagem não foi salva!</string>
     <string name="cameraWarning">Espere o sinal do GPS!</string>
+    <string name="imageCanceled">Foto cancelada</string>
+
+    <string name="gpsWarning2">Alerta!</string>
+    <string name="gpsWarning3">Ative o GPS antes de usar!</string>
 
 </resources>

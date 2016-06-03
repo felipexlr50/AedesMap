@@ -50,7 +50,7 @@ import java.util.Calendar;
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    DrawerLayout drawer;
+    private DrawerLayout drawer;
     private BaseDAO dao;
     private ImageDAO imageDAO;
     private double lat;
@@ -59,6 +59,7 @@ public class MenuActivity extends AppCompatActivity
     private LocationManager locationManager;
     private boolean isGPSSignalOn=false;
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
+    private int nada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,58 +86,68 @@ public class MenuActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         gpsMessage();
+
     }
 
     public void onCreateCamera(View v){
-       // if(lat!=0 || lng!=0) {
-
-
+       //if(lat!=0 || lng!=0) {
             Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
             startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
        // }
-       // else{
+      //  else{
             //Toast.makeText(MenuActivity.this, this.getString(R.string.cameraWarning), Toast.LENGTH_SHORT).show();
        // }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        imageDAO = new ImageDAO(this);
-        Calendar dateAtual = Calendar.getInstance();
-        SQLiteDatabase db = imageDAO.getWritableDatabase();
-        int result=0;
-        DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
+        try {
+            imageDAO = new ImageDAO(this);
+            Calendar dateAtual = Calendar.getInstance();
+            SQLiteDatabase db = imageDAO.getWritableDatabase();
 
-        if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
+            int result = 0;
+            DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
 
-            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            if (data.getExtras().isEmpty()) {
+                Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
+            } else {
+                if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
 
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    Bitmap photo = (Bitmap) data.getExtras().get("data");
 
-            if (photo != null) {
-                photo.compress(Bitmap.CompressFormat.JPEG, 60, stream);
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
+                    if (photo != null) {
+                        photo.compress(Bitmap.CompressFormat.JPEG, 60, stream);
+
+                    }
+
+                    byte[] byteArray = stream.toByteArray();
+                    Log.d("Byte", byteArray.toString());
+
+
+                    result = imageDAO.insert(byteArray, lat, lng, format.format(dateAtual.getTime()), db);
+
+                    if (result == -1) {
+                        Toast.makeText(this, this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
+                        Log.d("byte", "Imagem nao salva");
+                    } else
+                        insertPosition();
+                    Toast.makeText(this, this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
+                    Log.d("byte", "Imagem salva");
+
+
+                    db.close();
+
+
+                }
             }
+        }
 
-            byte[] byteArray = stream.toByteArray();
-            Log.d("Byte",byteArray.toString());
-
-
-            result = imageDAO.insert(byteArray,lat,lng,format.format(dateAtual.getTime()),db);
-
-            if (result == -1) {
-                Toast.makeText(this, this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
-                Log.d("byte","Imagem nao salva");
-            } else
-                insertPosition();
-                Toast.makeText(this, this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
-                Log.d("byte","Imagem salva");
-
-
-            db.close();
-
-
+        catch(NullPointerException exception){
+            exception.printStackTrace();
+            Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -286,26 +297,24 @@ public class MenuActivity extends AppCompatActivity
 
 
 
+
     }
 
 
     private void gpsMessage(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("Alerta");
+        builder.setTitle(this.getString(R.string.gpsWarning2));
 
-        builder.setMessage("Ative o GPS antes de usar!!")
+        builder.setMessage(this.getString(R.string.gpsWarning3))
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
+                        onClickGetPosition();
                         dialog.cancel();
                     }
                 });
+
 
         AlertDialog alertDialog = builder.create();
         alertDialog.show();

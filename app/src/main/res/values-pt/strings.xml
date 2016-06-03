@@ -25,4 +25,15 @@
     <string name="infoText8">3 passos simples para combater o Aedes aegypti:</string>
     <string name="infoText9">1. Baixe o AedesMap</string>
     <string name="title_info">Informações</string>
+    <string name="imageSaved">Imagem salva!</string>
+    <string name="imageNotSaved">Imagem não foi salva!</string>
+    <string name="imageCanceled">Foto cancelada</string>
+
+    <string name="cameraWarning">Espere o sinal do GPS!</string>
+    <string name="wrongGPSValue">Valor de GPS errado!</string>
+    <string name="positionSaved">Ponto salvo!</string>
+    <string name="positionNotsaved">Ponto não salvo!</string>
+    <string name="noGPSSignal">Ainda sem sinal!</string>
+    <string name="gpsWarning2">Alerta!</string>
+    <string name="gpsWarning3">Ative o GPS antes de usar!</string>
 </resources>
