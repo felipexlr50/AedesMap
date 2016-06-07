@@ -36,4 +36,9 @@
     <string name="wrongGPSValue">Wrong GPS signal</string>
     <string name="gpsWarning2">Warning!</string>
     <string name="gpsWarning3">Set GPS on before using!</string>
+    <string name="findGPS">Searching for position...</string>
+    <string name="occurrence">Occurrences</string>
+    <string name="title_activity_graph_acitivity">Data</string>
+    <string name="title_graph">Plot data</string>
+    <string name="graphTitle">Historic Serie</string>
 </resources>

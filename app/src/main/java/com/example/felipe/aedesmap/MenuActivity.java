@@ -6,7 +6,9 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -89,6 +91,13 @@ public class MenuActivity extends AppCompatActivity
 
     }
 
+    @Override
+    public void onConfigurationChanged(Configuration newConfig)
+    {
+        super.onConfigurationChanged(newConfig);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+    }
+
     public void onCreateCamera(View v){
        //if(lat!=0 || lng!=0) {
             Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -103,11 +112,11 @@ public class MenuActivity extends AppCompatActivity
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         try {
             imageDAO = new ImageDAO(this);
-            Calendar dateAtual = Calendar.getInstance();
+            //Calendar dateAtual = Calendar.getInstance();
             SQLiteDatabase db = imageDAO.getWritableDatabase();
 
             int result = 0;
-            DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
+           // DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
 
             if (data.getExtras().isEmpty()) {
                 Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
@@ -127,7 +136,7 @@ public class MenuActivity extends AppCompatActivity
                     Log.d("Byte", byteArray.toString());
 
 
-                    result = imageDAO.insert(byteArray, lat, lng, format.format(dateAtual.getTime()), db);
+                    result = imageDAO.insert(byteArray, lat, lng, db);
 
                     if (result == -1) {
                         Toast.makeText(this, this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
@@ -214,7 +223,7 @@ public class MenuActivity extends AppCompatActivity
     public void insertPosition() {
 
         Calendar dateAtual = Calendar.getInstance();
-        DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:mm:00.0");
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
         dao = new BaseDAO(this);
         SQLiteDatabase db = dao.getWritableDatabase();
@@ -268,7 +277,7 @@ public class MenuActivity extends AppCompatActivity
                 }
 
                 if(!isGPSSignalOn){
-                    Toast.makeText(MenuActivity.this, "Procurando Posição...", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MenuActivity.this, MenuActivity.this.getString(R.string.findGPS), Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -343,7 +352,12 @@ public class MenuActivity extends AppCompatActivity
 
             onClickOpenInfo();
 
+        } else if(id == R.id.nav_graph){
+
+            startActivity(new Intent(this,GraphAcitivity.class));
+
         }
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

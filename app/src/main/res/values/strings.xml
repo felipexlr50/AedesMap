@@ -40,5 +40,10 @@
 
     <string name="gpsWarning2">Alerta!</string>
     <string name="gpsWarning3">Ative o GPS antes de usar!</string>
+    <string name="title_graph">Dados</string>
+    <string name="findGPS">Procurando Posição...</string>
+    <string name="occurrence">Ocorrências</string>
+    <string name="title_activity_graph_acitivity">Dados</string>
+    <string name="graphTitle">Série histórica</string>
 
 </resources>

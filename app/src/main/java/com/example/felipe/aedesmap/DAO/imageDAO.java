@@ -17,17 +17,18 @@ public class ImageDAO extends SQLiteOpenHelper {
     public static final String IMGBLOB = "img_blob";
     public static final String LAT = "latitude";
     public static final String LGN = "longitude";
-    public static final String DATA_IN = "data_inserida";
+    public static final String DATA_IN = "data_in";
+    protected static final String teste = "teste";
 
     private static final String DATABASE_NAME = "imagem.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
     private static final String CREATE_TABLE = "CREATE TABLE "+TBL+"(\n" +
             COD+" INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
             IMGBLOB+" BLOB,\n" +
             LAT+" REAL,\n" +
             LGN+" REAL,\n" +
-            DATA_IN+" DATETIME\n" +
+            DATA_IN+" DATETIME DEFAULT CURRENT_DATE\n" +
             ")";
 
 
@@ -52,17 +53,30 @@ public class ImageDAO extends SQLiteOpenHelper {
         return(getReadableDatabase().rawQuery("SELECT "+IMGBLOB+" FROM "+TBL,null));
     }
 
-    public int insert(byte[] bytes,double lat, double lng, String dataInserida,SQLiteDatabase db){
+    public int insert(byte[] bytes,double lat, double lng,SQLiteDatabase db){
         ContentValues cv=new ContentValues();
         cv.put(IMGBLOB,bytes);
         cv.put(LAT,lat);
         cv.put(LGN,lng);
-        cv.put(DATA_IN,dataInserida);
+        //cv.put(DATA_IN,dataInserida);
         Log.d("byte", "inserted");
         return (int) db.insert(TBL,null,cv);
 
 
 
+    }
+
+    public Cursor getOccurrenceByMonth(){
+        return (getReadableDatabase().rawQuery("SELECT "+DATA_IN+", strftime('%m', "+DATA_IN+") as mes, strftime('%Y', "+DATA_IN+") as ano, count(*) as soma FROM "+TBL+"\n" +
+                "group by strftime('%m', "+DATA_IN+")\n" +
+                "order by "+DATA_IN+" asc",null));
+    }
+
+    public Cursor getOccurrenceByDay(){
+        return (getReadableDatabase().rawQuery("SELECT "+DATA_IN+", strftime('%d', "+DATA_IN+") as day, count(*) as soma FROM "+TBL+"\n" +
+                "where strftime('%Y',"+DATA_IN+") = strftime('%Y',CURRENT_DATE) and strftime('%m',"+DATA_IN+") = strftime('%m',CURRENT_DATE) \n" +
+                "group by strftime('%d', "+DATA_IN+")\n" +
+                "order by "+DATA_IN+" asc",null));
     }
 
     public byte[] getImage(Cursor c){
