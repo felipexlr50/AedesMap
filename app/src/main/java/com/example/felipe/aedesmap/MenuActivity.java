@@ -101,6 +101,7 @@ public class MenuActivity extends AppCompatActivity
     public void onCreateCamera(View v){
        //if(lat!=0 || lng!=0) {
             Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
             startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
        // }
       //  else{
@@ -335,11 +336,11 @@ public class MenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_add) {
+        /*if (id == R.id.nav_add) {
             onClickAddPosition();
 
 
-        } else if (id == R.id.nav_mapa) {
+        } else*/ if (id == R.id.nav_mapa) {
 
             onClickOpenMap();
             Log.d("menu","teste2");

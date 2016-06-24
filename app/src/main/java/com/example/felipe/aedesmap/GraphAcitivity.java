@@ -54,6 +54,7 @@ public class GraphAcitivity extends AppCompatActivity {
         graphView.addSeries(series);
         series.setColor(Color.parseColor("#d64949"));
         series.setDrawValuesOnTop(true);
+        series.setValuesOnTopColor(Color.BLACK);
         series.setSpacing(50);
         graphView.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(this));
 
@@ -108,6 +109,7 @@ public class GraphAcitivity extends AppCompatActivity {
                 }
 
                 series.appendData(new DataPoint(date,ocorrencias),true,cursor.getColumnCount());
+
                 //series.appendData(new DataPoint(Double.parseDouble(mes),ocorrencias),true,cursor.getColumnCount());  // testar esse metodo ainda!
                 max.add(new Integer(ocorrencias));
 
