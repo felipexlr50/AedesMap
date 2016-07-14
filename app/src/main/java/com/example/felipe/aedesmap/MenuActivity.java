@@ -12,6 +12,7 @@ import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.GpsStatus;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -32,12 +33,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
+import com.google.android.gms.maps.model.LatLng;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -59,9 +62,12 @@ public class MenuActivity extends AppCompatActivity
     private double lng;
     private LocationListener lListerner;
     private LocationManager locationManager;
-    private boolean isGPSSignalOn=false;
+    private boolean isGPSSignalOn = false;
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
-    private int nada;
+    private ProgressBar progressBar;
+    private GpsStatus.Listener mGPSStatusListener;
+    private double sendLat;
+    private double sendLng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,12 +77,16 @@ public class MenuActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 drawer.openDrawer(GravityCompat.START);
             }
         });
+
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -88,25 +98,33 @@ public class MenuActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         gpsMessage();
+        //setProgressBarON();
 
     }
 
+    private void setProgressBarON() {
+        if (lat == 0 | lng == 0) {
+            progressBar.setVisibility(View.INVISIBLE);
+        } else {
+            progressBar.setVisibility(View.VISIBLE);
+        }
+    }
+
     @Override
-    public void onConfigurationChanged(Configuration newConfig)
-    {
+    public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
-    public void onCreateCamera(View v){
-       //if(lat!=0 || lng!=0) {
-            Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    public void onCreateCamera(View v) {
+        //if(lat!=0 || lng!=0) {
+        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-            startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
-       // }
-      //  else{
-            //Toast.makeText(MenuActivity.this, this.getString(R.string.cameraWarning), Toast.LENGTH_SHORT).show();
-       // }
+        startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+        // }
+        //  else{
+        //Toast.makeText(MenuActivity.this, this.getString(R.string.cameraWarning), Toast.LENGTH_SHORT).show();
+        // }
     }
 
     @Override
@@ -117,7 +135,7 @@ public class MenuActivity extends AppCompatActivity
             SQLiteDatabase db = imageDAO.getWritableDatabase();
 
             int result = 0;
-           // DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
+            // DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
 
             if (data.getExtras().isEmpty()) {
                 Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
@@ -153,9 +171,7 @@ public class MenuActivity extends AppCompatActivity
 
                 }
             }
-        }
-
-        catch(NullPointerException exception){
+        } catch (NullPointerException exception) {
             exception.printStackTrace();
             Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
         }
@@ -193,12 +209,16 @@ public class MenuActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClickOpenInfo(){
-        startActivity(new Intent(this,InfoActivity.class));
+    public void onClickOpenInfo() {
+        startActivity(new Intent(this, InfoActivity.class));
     }
 
     public void onClickOpenMap() {
-        startActivity(new Intent(this, ClusteringMap.class));
+        Intent intent = new Intent(MenuActivity.this,ClusteringMap.class);
+        intent.putExtra("lat",sendLat);
+        intent.putExtra("lng",sendLng);
+
+        startActivity(intent);
     }
 
     public void onClickAddPosition() {
@@ -208,15 +228,14 @@ public class MenuActivity extends AppCompatActivity
     public void onClickGetPosition() {
         getGPSposition(locationManager, lListerner);
         //Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
-        Log.d("boolean",isGPSSignalOn+"");
-        if(getLat()==0 || getLng()==0){
-            isGPSSignalOn=false;
-        }
-        else{
-            isGPSSignalOn=true;
+        Log.d("boolean", isGPSSignalOn + "");
+        if (getLat() == 0 || getLng() == 0) {
+            isGPSSignalOn = false;
+        } else {
+            isGPSSignalOn = true;
         }
 
-        if(!isGPSSignalOn){
+        if (!isGPSSignalOn) {
             Toast.makeText(MenuActivity.this, "Procurando Posição...", Toast.LENGTH_SHORT).show();
         }
     }
@@ -232,15 +251,11 @@ public class MenuActivity extends AppCompatActivity
         //db.execSQL("delete from " + dao.TBL);
         long result = 0;
 
-        if(getLat() ==0|| getLng() ==0){
+        if (getLat() == 0 || getLng() == 0) {
             Toast.makeText(MenuActivity.this, this.getString(R.string.noGPSSignal), Toast.LENGTH_SHORT).show();
-        }
-
-        else if((getLat() >90|| getLat() <-90)||(getLng() >180|| getLng() <-180)){
+        } else if ((getLat() > 90 || getLat() < -90) || (getLng() > 180 || getLng() < -180)) {
             Toast.makeText(MenuActivity.this, this.getString(R.string.wrongGPSValue), Toast.LENGTH_SHORT).show();
-        }
-
-        else {
+        } else {
             cv.put(dao.LGN, getLng());
             cv.put(dao.LAT, getLat());
             cv.put(dao.DATA_IN, format.format(dateAtual.getTime()));
@@ -256,9 +271,10 @@ public class MenuActivity extends AppCompatActivity
 
     }
 
-    public void getGPSposition(LocationManager locationManager, LocationListener lListerner){
+    public void getGPSposition(LocationManager locationManager, LocationListener lListerner) {
         locationManager = (LocationManager)
                 getSystemService(Context.LOCATION_SERVICE);
+
 
         lListerner = new LocationListener() {
             @Override
@@ -267,19 +283,20 @@ public class MenuActivity extends AppCompatActivity
                 TextView positionTela = (TextView) findViewById(R.id.tfLatLng);
                 setLat(location.getLatitude());
                 setLng(location.getLongitude());
+                progressBar.setVisibility(View.INVISIBLE);
                 positionTela.setText(getLat() + " | " + getLng());
-                Log.d("boolean",isGPSSignalOn+"");
+                Log.d("boolean", isGPSSignalOn + "");
 
-                if(getLat()==0 || getLng()==0){
-                    isGPSSignalOn=false;
-                }
-                else{
-                    isGPSSignalOn=true;
+                if (getLat() == 0 || getLng() == 0) {
+                    isGPSSignalOn = false;
+                } else {
+                    isGPSSignalOn = true;
                 }
 
-                if(!isGPSSignalOn){
+                if (!isGPSSignalOn) {
                     Toast.makeText(MenuActivity.this, MenuActivity.this.getString(R.string.findGPS), Toast.LENGTH_SHORT).show();
                 }
+
 
             }
 
@@ -295,20 +312,57 @@ public class MenuActivity extends AppCompatActivity
 
             @Override
             public void onProviderDisabled(String provider) {
-
             }
         };
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.MAPS_RECEIVE)
+
+        final LocationListener finalLListerner = lListerner;
+        final LocationManager finalLocationManager = locationManager;
+        mGPSStatusListener = new GpsStatus.Listener() {
+            @Override
+            public void onGpsStatusChanged(int event) {
+                switch (event) {
+                    case GpsStatus.GPS_EVENT_STARTED:
+                        progressBar.setVisibility(View.VISIBLE);
+                        // Toast.makeText(MenuActivity.this, "GPS_SEARCHING", Toast.LENGTH_SHORT).show();
+                        System.out.println("TAG - GPS searching: ");
+                        break;
+                    case GpsStatus.GPS_EVENT_STOPPED:
+                        System.out.println("TAG - GPS Stopped");
+                        break;
+                    case GpsStatus.GPS_EVENT_FIRST_FIX:
+                        Log.e("gpsTest", "onGpsStatusChanged first fix");
+                        if (ActivityCompat.checkSelfPermission(MenuActivity.this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MenuActivity.this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                                != PackageManager.PERMISSION_GRANTED) {
+                            return;
+                        }
+                        Location lastKnow = finalLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                        sendLat = lastKnow.getLatitude();
+                        sendLng = lastKnow.getLongitude();
+                        finalLocationManager.removeUpdates(finalLListerner);
+                        break;
+
+                    case GpsStatus.GPS_EVENT_SATELLITE_STATUS:
+                        Log.e("gpsTest", "onGpsStatusChanged status");
+                        break;
+                }
+            }
+        };
+
+
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.MAPS_RECEIVE)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.MAPS_RECEIVE)
                 != PackageManager.PERMISSION_GRANTED) {
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, lListerner);
-
+        locationManager.addGpsStatusListener(mGPSStatusListener);
 
 
 
     }
+
+
 
 
     private void gpsMessage(){

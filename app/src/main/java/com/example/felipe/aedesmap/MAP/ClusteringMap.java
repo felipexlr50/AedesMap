@@ -16,6 +16,7 @@
 
 package com.example.felipe.aedesmap.MAP;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
@@ -46,7 +47,8 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         , ClusterManager.OnClusterItemInfoWindowClickListener<MyItem> {
 
     private ClusterManager<MyItem> mClusterManager;
-
+    private double reciveLat;
+    private double reciveLng;
 
     private class CustomIconRenderer extends DefaultClusterRenderer<MyItem> {
         private final IconGenerator mIconGenerator = new IconGenerator(getApplicationContext());
@@ -111,7 +113,10 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
 
     @Override
     public void startDemo() {
-        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-23.086057, -47.212235), 14));
+        Intent intent = getIntent();
+        reciveLat = intent.getDoubleExtra("lat",0);
+        reciveLng = intent.getDoubleExtra("lng",0);
+        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(reciveLat, reciveLng), 14));
         //mClusterManager = new ClusterManager<MyItem>(this, getMap());
         //mClusterManager.setRenderer(new CustomIconRenderer());
 
