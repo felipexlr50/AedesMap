@@ -409,7 +409,8 @@ public class MenuActivity extends AppCompatActivity
 
         } else if(id == R.id.nav_graph){
 
-            startActivity(new Intent(this,GraphAcitivity.class));
+           // startActivity(new Intent(this,GraphAcitivity.class));
+            startActivity(new Intent(this,NewGraphView.class));
 
         }
 

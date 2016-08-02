@@ -46,7 +46,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".GraphAcitivity"
+            android:name=".NewGraphView"
             android:label="@string/title_activity_graph_acitivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|keyboardHidden"
