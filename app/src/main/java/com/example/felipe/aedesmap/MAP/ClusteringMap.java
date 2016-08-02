@@ -21,9 +21,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.R;
@@ -37,8 +40,19 @@ import com.example.felipe.aedesmap.model.MyItem;
 import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 import com.google.maps.android.ui.IconGenerator;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.text.SimpleDateFormat;
 
 
 public class ClusteringMap extends BaseDemoActivity implements ClusterManager.OnClusterClickListener<MyItem>
@@ -49,6 +63,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
     private ClusterManager<MyItem> mClusterManager;
     private double reciveLat;
     private double reciveLng;
+    private ProgressBar progressBar;
 
     private class CustomIconRenderer extends DefaultClusterRenderer<MyItem> {
         private final IconGenerator mIconGenerator = new IconGenerator(getApplicationContext());
@@ -131,10 +146,15 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         mClusterManager.setRenderer(new CustomIconRenderer());
         mClusterManager.cluster();
 
-        addItens();
+        addItensFromDB();
     }
 
-    private void addItens(){
+    private  void addItensFromInternet(){
+        double lat;
+        double lng;
+    }
+
+    private void addItensFromDB(){
         double lat;
         double lng;
 
@@ -165,6 +185,63 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         }
         c.close();
         db.close();
+    }
+
+    public String getRequest(String url) {
+
+        try {
+            HttpClient client = new DefaultHttpClient();
+            String getURL = url;
+            HttpGet get = new HttpGet(getURL);
+            HttpResponse responseGet = client.execute(get);
+            HttpEntity resEntityGet = responseGet.getEntity();
+            if (resEntityGet != null) {
+                String response = EntityUtils.toString(resEntityGet);
+
+                return response;
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    class SendRequest extends AsyncTask<String, Void, Void> {
+
+
+        @Override
+        protected void onPreExecute() {
+            progressBar = (ProgressBar) findViewById(R.id.progressBar);
+            progressBar.setVisibility(View.VISIBLE);
+
+        }
+        @Override
+        protected Void doInBackground(String... params) {
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void v) {
+            progressBar.setVisibility(View.INVISIBLE);
+
+        }
+    }
+
+    private void jsonParse(String response){
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        JSONObject json;
+        JSONArray jarray;
+
+        try {
+            json = new JSONObject(getRequest(response));
+            JSONObject dataJson = json.getJSONObject("info");
+            jarray = dataJson.getJSONArray("umidade");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
 

@@ -33,6 +33,7 @@ dependencies {
     compile 'com.google.android.gms:play-services:8.4.0'
     compile 'com.jjoe64:graphview:4.0.1'
     compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }
 
 
