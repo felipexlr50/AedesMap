@@ -64,6 +64,8 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
     private double reciveLat;
     private double reciveLng;
     private ProgressBar progressBar;
+    private static final String APIURL_PEGAR_PONTOS = "pegarPontos.php";
+    private String URL;
 
     private class CustomIconRenderer extends DefaultClusterRenderer<MyItem> {
         private final IconGenerator mIconGenerator = new IconGenerator(getApplicationContext());
@@ -89,8 +91,8 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
 
             mImageView.setImageBitmap(myItem.getImage());
             Bitmap icon = mIconGenerator.makeIcon();
-            markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon));
-            //markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
+            //markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon));
+            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
             super.onBeforeClusterItemRendered(myItem,markerOptions);
         }
 
@@ -131,27 +133,28 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         Intent intent = getIntent();
         reciveLat = intent.getDoubleExtra("lat",0);
         reciveLng = intent.getDoubleExtra("lng",0);
+        URL = intent.getStringExtra("API")+APIURL_PEGAR_PONTOS;
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(reciveLat, reciveLng), 14));
         //mClusterManager = new ClusterManager<MyItem>(this, getMap());
         //mClusterManager.setRenderer(new CustomIconRenderer());
 
-        mClusterManager = new ClusterManager<MyItem>(this, getMap());
-        getMap().setOnCameraChangeListener(mClusterManager);
-        getMap().setOnMarkerClickListener(mClusterManager);
-        getMap().setOnInfoWindowClickListener(mClusterManager);
-        mClusterManager.setOnClusterClickListener(this);
-        mClusterManager.setOnClusterInfoWindowClickListener(this);
-        mClusterManager.setOnClusterItemClickListener(this);
-        mClusterManager.setOnClusterItemInfoWindowClickListener(this);
-        mClusterManager.setRenderer(new CustomIconRenderer());
-        mClusterManager.cluster();
+//        mClusterManager = new ClusterManager<MyItem>(this, getMap());
+//        getMap().setOnCameraChangeListener(mClusterManager);
+//        getMap().setOnMarkerClickListener(mClusterManager);
+//        getMap().setOnInfoWindowClickListener(mClusterManager);
+//        mClusterManager.setOnClusterClickListener(this);
+//        mClusterManager.setOnClusterInfoWindowClickListener(this);
+//        mClusterManager.setOnClusterItemClickListener(this);
+//        mClusterManager.setOnClusterItemInfoWindowClickListener(this);
+//        mClusterManager.setRenderer(new CustomIconRenderer());
+//        mClusterManager.cluster();
+        addItensFromInternet();
 
-        addItensFromDB();
+        //addItensFromDB();
     }
 
     private  void addItensFromInternet(){
-        double lat;
-        double lng;
+        new SendRequest().execute(URL);
     }
 
     private void addItensFromDB(){
@@ -215,29 +218,48 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         protected void onPreExecute() {
             progressBar = (ProgressBar) findViewById(R.id.progressBar);
             progressBar.setVisibility(View.VISIBLE);
+            mClusterManager = new ClusterManager<MyItem>(ClusteringMap.this, getMap());
+            getMap().setOnCameraChangeListener(mClusterManager);
+            getMap().setOnMarkerClickListener(mClusterManager);
+            getMap().setOnInfoWindowClickListener(mClusterManager);
+            mClusterManager.setOnClusterClickListener(ClusteringMap.this);
+            mClusterManager.setOnClusterInfoWindowClickListener(ClusteringMap.this);
+            mClusterManager.setOnClusterItemClickListener(ClusteringMap.this);
+            mClusterManager.setOnClusterItemInfoWindowClickListener(ClusteringMap.this);
+            mClusterManager.setRenderer(new CustomIconRenderer());
+            mClusterManager.cluster();
 
         }
         @Override
         protected Void doInBackground(String... params) {
+            jsonParse(getRequest(params[0]));
             return null;
         }
 
         @Override
         protected void onPostExecute(Void v) {
             progressBar.setVisibility(View.INVISIBLE);
-
         }
     }
 
     private void jsonParse(String response){
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         JSONObject json;
         JSONArray jarray;
+        double lat,lng;
 
         try {
             json = new JSONObject(getRequest(response));
-            JSONObject dataJson = json.getJSONObject("info");
-            jarray = dataJson.getJSONArray("umidade");
+            jarray = json.getJSONArray("info");
+
+            for (int i = 0; i < jarray.length(); i++) {
+                JSONObject oneObject = jarray.getJSONObject(i);
+                lat = oneObject.getDouble("latitude");
+                lng = oneObject.getDouble("longitude");
+
+                MyItem itens = new MyItem(lat, lng);
+                mClusterManager.addItem(itens);
+            }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }

@@ -81,6 +81,11 @@ public class NewGraphView extends AppCompatActivity {
 
     }
 
+    public ArrayList<Object> getFromServer(){
+
+        return null;
+    }
+
     public ArrayList<Object> getFromDB(Context context){
 
         ArrayList<Object> objects = new ArrayList<>();

@@ -17,6 +17,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -42,6 +43,16 @@ import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
 import com.google.android.gms.maps.model.LatLng;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -50,7 +61,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -68,6 +81,7 @@ public class MenuActivity extends AppCompatActivity
     private GpsStatus.Listener mGPSStatusListener;
     private double sendLat;
     private double sendLng;
+    private static final String APIURL = "http://aedesmap.16mb.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -161,7 +175,8 @@ public class MenuActivity extends AppCompatActivity
                         Toast.makeText(this, this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
                         Log.d("byte", "Imagem nao salva");
                     } else
-                        insertPosition();
+                       // insertPosition();
+                        insertPositionToServer();
                     Toast.makeText(this, this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
                     Log.d("byte", "Imagem salva");
 
@@ -217,6 +232,7 @@ public class MenuActivity extends AppCompatActivity
         Intent intent = new Intent(MenuActivity.this,ClusteringMap.class);
         intent.putExtra("lat",sendLat);
         intent.putExtra("lng",sendLng);
+        intent.putExtra("API",APIURL);
 
         startActivity(intent);
     }
@@ -269,6 +285,11 @@ public class MenuActivity extends AppCompatActivity
             db.close();
         }
 
+    }
+
+    public void insertPositionToServer(){
+        String API = "salvarImagem.php";
+        new SendRequest().execute(APIURL+API);
     }
 
     public void getGPSposition(LocationManager locationManager, LocationListener lListerner) {
@@ -436,5 +457,54 @@ public class MenuActivity extends AppCompatActivity
 
     public void setLng(double lng) {
         this.lng = lng;
+    }
+
+    public  String postRequest(String url){
+
+        HttpClient client = new DefaultHttpClient();
+        String postURL = url;
+        HttpPost post = new HttpPost(postURL);
+
+        try {
+
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+            nameValuePairs.add(new BasicNameValuePair("latitude", lat+""));
+            nameValuePairs.add(new BasicNameValuePair("longitude", lng+""));
+
+            post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+            HttpResponse responsePost = client.execute(post);
+            HttpEntity resEntityGet = responsePost.getEntity();
+            if (resEntityGet != null) {
+                String response = EntityUtils.toString(resEntityGet);
+                Log.d("response",response);
+                return response;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+
+    }
+
+    class SendRequest extends AsyncTask<String, Void ,String> {
+
+        @Override
+        protected void onPreExecute(){
+            progressBar.setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            return postRequest(params[0]);
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+
     }
 }

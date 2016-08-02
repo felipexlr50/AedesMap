@@ -33,6 +33,11 @@ public class MyItem  implements ClusterItem {
         mPosition = new LatLng(lat, lng);
     }
 
+    public MyItem(double lat, double lng) {
+
+        mPosition = new LatLng(lat, lng);
+    }
+
     @Override
     public LatLng getPosition() {
          return mPosition;
