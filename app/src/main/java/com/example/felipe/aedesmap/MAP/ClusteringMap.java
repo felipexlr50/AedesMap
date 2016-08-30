@@ -30,6 +30,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.R;
+import com.example.felipe.aedesmap.handlers.InternetConnection;
+import com.example.felipe.aedesmap.model.Session;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
@@ -64,7 +66,7 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
     private double reciveLat;
     private double reciveLng;
     private ProgressBar progressBar;
-    private static final String APIURL_PEGAR_PONTOS = "pegarPontos.php";
+
     private String URL;
 
     private class CustomIconRenderer extends DefaultClusterRenderer<MyItem> {
@@ -131,23 +133,23 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
     @Override
     public void startDemo() {
         Intent intent = getIntent();
-        reciveLat = intent.getDoubleExtra("lat",0);
-        reciveLng = intent.getDoubleExtra("lng",0);
-        URL = intent.getStringExtra("API")+APIURL_PEGAR_PONTOS;
+        reciveLat = Session.getLatNow();
+        reciveLng = Session.getLngNow();
+        URL = Session.getAPIURL()+Session.getApiPegarPontos();
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(reciveLat, reciveLng), 14));
         //mClusterManager = new ClusterManager<MyItem>(this, getMap());
         //mClusterManager.setRenderer(new CustomIconRenderer());
 
-//        mClusterManager = new ClusterManager<MyItem>(this, getMap());
-//        getMap().setOnCameraChangeListener(mClusterManager);
-//        getMap().setOnMarkerClickListener(mClusterManager);
-//        getMap().setOnInfoWindowClickListener(mClusterManager);
-//        mClusterManager.setOnClusterClickListener(this);
-//        mClusterManager.setOnClusterInfoWindowClickListener(this);
-//        mClusterManager.setOnClusterItemClickListener(this);
-//        mClusterManager.setOnClusterItemInfoWindowClickListener(this);
-//        mClusterManager.setRenderer(new CustomIconRenderer());
-//        mClusterManager.cluster();
+        mClusterManager = new ClusterManager<MyItem>(ClusteringMap.this, getMap());
+        getMap().setOnCameraChangeListener(mClusterManager);
+        getMap().setOnMarkerClickListener(mClusterManager);
+        getMap().setOnInfoWindowClickListener(mClusterManager);
+        mClusterManager.setOnClusterClickListener(ClusteringMap.this);
+        mClusterManager.setOnClusterInfoWindowClickListener(ClusteringMap.this);
+        mClusterManager.setOnClusterItemClickListener(ClusteringMap.this);
+        mClusterManager.setOnClusterItemInfoWindowClickListener(ClusteringMap.this);
+        mClusterManager.setRenderer(new CustomIconRenderer());
+        mClusterManager.cluster();
         addItensFromInternet();
 
         //addItensFromDB();
@@ -190,26 +192,6 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         db.close();
     }
 
-    public String getRequest(String url) {
-
-        try {
-            HttpClient client = new DefaultHttpClient();
-            String getURL = url;
-            HttpGet get = new HttpGet(getURL);
-            HttpResponse responseGet = client.execute(get);
-            HttpEntity resEntityGet = responseGet.getEntity();
-            if (resEntityGet != null) {
-                String response = EntityUtils.toString(resEntityGet);
-
-                return response;
-
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "";
-    }
 
     class SendRequest extends AsyncTask<String, Void, Void> {
 
@@ -218,21 +200,10 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         protected void onPreExecute() {
             progressBar = (ProgressBar) findViewById(R.id.progressBar);
             progressBar.setVisibility(View.VISIBLE);
-            mClusterManager = new ClusterManager<MyItem>(ClusteringMap.this, getMap());
-            getMap().setOnCameraChangeListener(mClusterManager);
-            getMap().setOnMarkerClickListener(mClusterManager);
-            getMap().setOnInfoWindowClickListener(mClusterManager);
-            mClusterManager.setOnClusterClickListener(ClusteringMap.this);
-            mClusterManager.setOnClusterInfoWindowClickListener(ClusteringMap.this);
-            mClusterManager.setOnClusterItemClickListener(ClusteringMap.this);
-            mClusterManager.setOnClusterItemInfoWindowClickListener(ClusteringMap.this);
-            mClusterManager.setRenderer(new CustomIconRenderer());
-            mClusterManager.cluster();
-
         }
         @Override
         protected Void doInBackground(String... params) {
-            jsonParse(getRequest(params[0]));
+            jsonParse(InternetConnection.getRequest(params[0],ClusteringMap.this));
             return null;
         }
 
@@ -243,19 +214,17 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
     }
 
     private void jsonParse(String response){
-        JSONObject json;
-        JSONArray jarray;
         double lat,lng;
 
         try {
-            json = new JSONObject(getRequest(response));
-            jarray = json.getJSONArray("info");
+            JSONObject json = new JSONObject(response);
+            JSONArray jarray = json.getJSONArray("info");
 
             for (int i = 0; i < jarray.length(); i++) {
                 JSONObject oneObject = jarray.getJSONObject(i);
-                lat = oneObject.getDouble("latitude");
-                lng = oneObject.getDouble("longitude");
-
+                lat = Double.parseDouble(oneObject.getString("latitude"));
+                lng = Double.parseDouble(oneObject.getString("longitude"));
+                Log.d("LatTeste","Lat: "+lat+"  lng:"+lng);
                 MyItem itens = new MyItem(lat, lng);
                 mClusterManager.addItem(itens);
             }

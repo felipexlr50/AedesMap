@@ -41,6 +41,8 @@ import android.widget.Toast;
 import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
+import com.example.felipe.aedesmap.handlers.APIKeyGen;
+import com.example.felipe.aedesmap.model.Session;
 import com.google.android.gms.maps.model.LatLng;
 
 import org.apache.http.HttpEntity;
@@ -90,12 +92,16 @@ public class MenuActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Log.d("SHA",APIKeyGen.getSHA256("123"));
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 drawer.openDrawer(GravityCompat.START);
+                APIKeyGen.getAPIKEY();
             }
         });
 
@@ -358,8 +364,8 @@ public class MenuActivity extends AppCompatActivity
                             return;
                         }
                         Location lastKnow = finalLocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                        sendLat = lastKnow.getLatitude();
-                        sendLng = lastKnow.getLongitude();
+                        Session.setLatNow(lastKnow.getLatitude());
+                        Session.setLngNow(lastKnow.getLongitude());
                         finalLocationManager.removeUpdates(finalLListerner);
                         break;
 
