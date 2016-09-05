@@ -53,6 +53,7 @@ public class InternetConnection {
         if(isNetworkAvailable(context)) {
             HttpClient client = new DefaultHttpClient();
             HttpPost post = new HttpPost(url);
+            post.setHeader("X-API-KEY", APIKeyGen.getAPIKEY());
             try {
                 post.setEntity(new UrlEncodedFormEntity(params));
                 HttpResponse responsePost = client.execute(post);

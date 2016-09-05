@@ -63,8 +63,6 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         , ClusterManager.OnClusterItemInfoWindowClickListener<MyItem> {
 
     private ClusterManager<MyItem> mClusterManager;
-    private double reciveLat;
-    private double reciveLng;
     private ProgressBar progressBar;
 
     private String URL;
@@ -132,9 +130,9 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
 
     @Override
     public void startDemo() {
-        Intent intent = getIntent();
-        reciveLat = Session.getLatNow();
-        reciveLng = Session.getLngNow();
+
+        double reciveLat = Session.getLatNow();
+        double reciveLng = Session.getLngNow();
         URL = Session.getAPIURL()+Session.getApiPegarPontos();
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(reciveLat, reciveLng), 14));
         //mClusterManager = new ClusterManager<MyItem>(this, getMap());

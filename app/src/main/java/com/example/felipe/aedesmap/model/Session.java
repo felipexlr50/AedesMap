@@ -7,8 +7,21 @@ public  class Session {
     private static double lngNow;
     private static final String APIURL  = "http://aedesmap.16mb.com/";
     private static final String API_PEGAR_PONTOS = "pegarPontos.php";
-    private static final String API_SALVAR_PONTOS = "http://aedesmap.16mb.com/salvarImagem.php";
+    private static final String API_SALVAR_PONTOS = "salvarImagem.php";
+    private static String imageBase64;
 
+
+    public static String getApiSalvarPontos() {
+        return API_SALVAR_PONTOS;
+    }
+
+    public static String getImageBase64() {
+        return imageBase64;
+    }
+
+    public static void setImageBase64(String imageBase64) {
+        Session.imageBase64 = imageBase64;
+    }
 
     public static double getLatNow() {
         return latNow;

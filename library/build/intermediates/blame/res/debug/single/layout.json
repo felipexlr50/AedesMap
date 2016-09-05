@@ -1,26 +1,38 @@
 [
     {
-        "merged": "C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
-        "source": "C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\layout\\amu_webview.xml"
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\layout\\amu_webview.xml"
     },
     {
-        "merged": "C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
-        "source": "C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\layout\\amu_info_window.xml"
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\layout\\amu_info_window.xml"
     },
     {
-        "merged": "C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
-        "source": "C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\layout\\amu_text_bubble.xml"
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\layout\\amu_text_bubble.xml"
     },
     {
-        "merged": "C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
-        "source": "C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\layout\\amu_info_window.xml"
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\layout\\amu_info_window.xml"
     },
     {
-        "merged": "C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
-        "source": "C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\layout\\amu_text_bubble.xml"
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/debug/layout/amu_info_window.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/layout/amu_info_window.xml"
     },
     {
-        "merged": "C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
-        "source": "C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\layout\\amu_webview.xml"
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/debug/layout/amu_text_bubble.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/layout/amu_text_bubble.xml"
+    },
+    {
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\layout\\amu_text_bubble.xml"
+    },
+    {
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\layout\\amu_webview.xml"
+    },
+    {
+        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/debug/layout/amu_webview.xml",
+        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/layout/amu_webview.xml"
     }
 ]

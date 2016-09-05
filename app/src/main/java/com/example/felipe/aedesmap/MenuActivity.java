@@ -3,7 +3,6 @@ package com.example.felipe.aedesmap;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -11,29 +10,26 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.location.GpsStatus;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.FileProvider;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,25 +38,13 @@ import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
 import com.example.felipe.aedesmap.handlers.APIKeyGen;
+import com.example.felipe.aedesmap.handlers.InternetConnection;
 import com.example.felipe.aedesmap.model.Session;
-import com.google.android.gms.maps.model.LatLng;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -81,9 +65,7 @@ public class MenuActivity extends AppCompatActivity
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
     private ProgressBar progressBar;
     private GpsStatus.Listener mGPSStatusListener;
-    private double sendLat;
-    private double sendLng;
-    private static final String APIURL = "http://aedesmap.16mb.com/";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,9 +153,12 @@ public class MenuActivity extends AppCompatActivity
 
                     }
 
-                    byte[] byteArray = stream.toByteArray();
-                    Log.d("Byte", byteArray.toString());
 
+
+                    byte[] byteArray = stream.toByteArray();
+
+                    String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                    Session.setImageBase64(encoded);
 
                     result = imageDAO.insert(byteArray, lat, lng, db);
 
@@ -183,8 +168,7 @@ public class MenuActivity extends AppCompatActivity
                     } else
                        // insertPosition();
                         insertPositionToServer();
-                    Toast.makeText(this, this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
-                    Log.d("byte", "Imagem salva");
+
 
 
                     db.close();
@@ -236,10 +220,6 @@ public class MenuActivity extends AppCompatActivity
 
     public void onClickOpenMap() {
         Intent intent = new Intent(MenuActivity.this,ClusteringMap.class);
-        intent.putExtra("lat",sendLat);
-        intent.putExtra("lng",sendLng);
-        intent.putExtra("API",APIURL);
-
         startActivity(intent);
     }
 
@@ -251,11 +231,7 @@ public class MenuActivity extends AppCompatActivity
         getGPSposition(locationManager, lListerner);
         //Toast.makeText(getBaseContext(),"Procurando posição",Toast.LENGTH_LONG).show();
         Log.d("boolean", isGPSSignalOn + "");
-        if (getLat() == 0 || getLng() == 0) {
-            isGPSSignalOn = false;
-        } else {
-            isGPSSignalOn = true;
-        }
+        isGPSSignalOn = !(getLat() == 0 || getLng() == 0);
 
         if (!isGPSSignalOn) {
             Toast.makeText(MenuActivity.this, "Procurando Posição...", Toast.LENGTH_SHORT).show();
@@ -278,10 +254,10 @@ public class MenuActivity extends AppCompatActivity
         } else if ((getLat() > 90 || getLat() < -90) || (getLng() > 180 || getLng() < -180)) {
             Toast.makeText(MenuActivity.this, this.getString(R.string.wrongGPSValue), Toast.LENGTH_SHORT).show();
         } else {
-            cv.put(dao.LGN, getLng());
-            cv.put(dao.LAT, getLat());
-            cv.put(dao.DATA_IN, format.format(dateAtual.getTime()));
-            result = db.insert(dao.TBL, null, cv);
+            cv.put(BaseDAO.LGN, getLng());
+            cv.put(BaseDAO.LAT, getLat());
+            cv.put(BaseDAO.DATA_IN, format.format(dateAtual.getTime()));
+            result = db.insert(BaseDAO.TBL, null, cv);
 
             if (result == -1) {
                 Toast.makeText(this, this.getString(R.string.positionNotsaved), Toast.LENGTH_LONG).show();
@@ -294,8 +270,8 @@ public class MenuActivity extends AppCompatActivity
     }
 
     public void insertPositionToServer(){
-        String API = "salvarImagem.php";
-        new SendRequest().execute(APIURL+API);
+        String API = Session.getApiSalvarPontos();
+        new SendRequest().execute(Session.getAPIURL()+API);
     }
 
     public void getGPSposition(LocationManager locationManager, LocationListener lListerner) {
@@ -465,34 +441,6 @@ public class MenuActivity extends AppCompatActivity
         this.lng = lng;
     }
 
-    public  String postRequest(String url){
-
-        HttpClient client = new DefaultHttpClient();
-        String postURL = url;
-        HttpPost post = new HttpPost(postURL);
-
-        try {
-
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
-            nameValuePairs.add(new BasicNameValuePair("latitude", lat+""));
-            nameValuePairs.add(new BasicNameValuePair("longitude", lng+""));
-
-            post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-            HttpResponse responsePost = client.execute(post);
-            HttpEntity resEntityGet = responsePost.getEntity();
-            if (resEntityGet != null) {
-                String response = EntityUtils.toString(resEntityGet);
-                Log.d("response",response);
-                return response;
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return null;
-
-    }
 
     class SendRequest extends AsyncTask<String, Void ,String> {
 
@@ -503,13 +451,20 @@ public class MenuActivity extends AppCompatActivity
 
         @Override
         protected String doInBackground(String... params) {
-            return postRequest(params[0]);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+
+            nameValuePairs.add(new BasicNameValuePair("latitude", lat+""));
+            nameValuePairs.add(new BasicNameValuePair("longitude", lng+""));
+            nameValuePairs.add(new BasicNameValuePair("imagem",Session.getImageBase64()));
+            return InternetConnection.postRequest(params[0],nameValuePairs,MenuActivity.this);
         }
 
         @Override
         protected void onPostExecute(String result) {
 
             progressBar.setVisibility(View.INVISIBLE);
+            Toast.makeText(MenuActivity.this, MenuActivity.this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
+            Log.d("byte", "Imagem salva");
         }
 
     }
