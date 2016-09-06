@@ -10,12 +10,15 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.location.GpsStatus;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -45,6 +48,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -62,9 +66,10 @@ public class MenuActivity extends AppCompatActivity
     private LocationListener lListerner;
     private LocationManager locationManager;
     private boolean isGPSSignalOn = false;
-    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
+    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 0;
     private ProgressBar progressBar;
     private GpsStatus.Listener mGPSStatusListener;
+    private File myFilesDir;
 
 
     @Override
@@ -76,7 +81,8 @@ public class MenuActivity extends AppCompatActivity
 
         Log.d("SHA",APIKeyGen.getSHA256("123"));
 
-
+        myFilesDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Android/data/com.example.felipe.aedesmap/files");
+        myFilesDir.mkdirs();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
@@ -121,7 +127,7 @@ public class MenuActivity extends AppCompatActivity
     public void onCreateCamera(View v) {
         //if(lat!=0 || lng!=0) {
         Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
+        //camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(myFilesDir.toString()+"/temp.jpg")));
         startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
         // }
         //  else{
@@ -139,26 +145,27 @@ public class MenuActivity extends AppCompatActivity
             int result = 0;
             // DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
 
-            if (data.getExtras().isEmpty()) {
+            if (data.getExtras().isEmpty()) {  //data.getExtras().isEmpty()
                 Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
             } else {
                 if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
 
                     Bitmap photo = (Bitmap) data.getExtras().get("data");
-
+                    //Bitmap photo = BitmapFactory.decodeFile(myFilesDir + "/temp.jpg");
                     ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
                     if (photo != null) {
-                        photo.compress(Bitmap.CompressFormat.JPEG, 60, stream);
+                        photo.compress(Bitmap.CompressFormat.JPEG, 100, stream);
 
                     }
-
-
-
                     byte[] byteArray = stream.toByteArray();
 
-                    String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                    String encoded = Base64.encodeToString(byteArray,Base64.DEFAULT);
                     Session.setImageBase64(encoded);
+                    Log.d("base64",Session.getImageBase64());
+                    Log.d("base64-encode",byteArray.toString());
+                    Log.d("base64-decode",Base64.decode(Session.getImageBase64(),Base64.DEFAULT).toString());
+
 
                     result = imageDAO.insert(byteArray, lat, lng, db);
 
@@ -168,12 +175,7 @@ public class MenuActivity extends AppCompatActivity
                     } else
                        // insertPosition();
                         insertPositionToServer();
-
-
-
                     db.close();
-
-
                 }
             }
         } catch (NullPointerException exception) {
