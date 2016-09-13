@@ -16,7 +16,6 @@
 
 package com.example.felipe.aedesmap.MAP;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
@@ -28,9 +27,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.R;
 import com.example.felipe.aedesmap.handlers.InternetConnection;
+import com.example.felipe.aedesmap.model.MyItem;
 import com.example.felipe.aedesmap.model.Session;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -38,23 +39,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
-import com.example.felipe.aedesmap.model.MyItem;
 import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 import com.google.maps.android.ui.IconGenerator;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.text.SimpleDateFormat;
 
 
 public class ClusteringMap extends BaseDemoActivity implements ClusterManager.OnClusterClickListener<MyItem>
@@ -222,8 +214,9 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
                 JSONObject oneObject = jarray.getJSONObject(i);
                 lat = Double.parseDouble(oneObject.getString("latitude"));
                 lng = Double.parseDouble(oneObject.getString("longitude"));
+                String imgString = oneObject.getString("imgString");
                 Log.d("LatTeste","Lat: "+lat+"  lng:"+lng);
-                MyItem itens = new MyItem(lat, lng);
+                MyItem itens = new MyItem(lat, lng,imgString);
                 mClusterManager.addItem(itens);
             }
 

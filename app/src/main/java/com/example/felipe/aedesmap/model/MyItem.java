@@ -18,6 +18,8 @@ package com.example.felipe.aedesmap.model;
 
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.clustering.ClusterItem;
@@ -28,8 +30,14 @@ public class MyItem  implements ClusterItem {
     private final LatLng mPosition;
     private Bitmap image;
 
+
     public MyItem(double lat, double lng, Bitmap image) {
         this.setImage(image);
+        mPosition = new LatLng(lat, lng);
+    }
+
+    public MyItem(double lat, double lng, String image) {
+        this.setImage(convertImageString64(image));
         mPosition = new LatLng(lat, lng);
     }
 
@@ -50,5 +58,13 @@ public class MyItem  implements ClusterItem {
 
     public void setImage(Bitmap image) {
         this.image = image;
+    }
+
+    private Bitmap convertImageString64(String imgString){
+        //imgString = imgString.replace("\n","");
+        //imgString = imgString.replace("\\","");
+
+        byte[] byteArray = Base64.decode(imgString,Base64.URL_SAFE|Base64.NO_WRAP);
+        return BitmapFactory.decodeByteArray(byteArray,0,byteArray.length);
     }
 }

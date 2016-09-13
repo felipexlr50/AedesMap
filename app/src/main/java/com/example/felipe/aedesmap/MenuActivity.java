@@ -106,7 +106,7 @@ public class MenuActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         gpsMessage();
-        //setProgressBarON();
+        setProgressBarON();
 
     }
 
@@ -127,7 +127,7 @@ public class MenuActivity extends AppCompatActivity
     public void onCreateCamera(View v) {
         //if(lat!=0 || lng!=0) {
         Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        //camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(myFilesDir.toString()+"/temp.jpg")));
+        camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(myFilesDir.toString()+"/temp.jpg")));
         startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
         // }
         //  else{
@@ -145,28 +145,23 @@ public class MenuActivity extends AppCompatActivity
             int result = 0;
             // DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
 
-            if (data.getExtras().isEmpty()) {  //data.getExtras().isEmpty()
+            if (false) {  //data.getExtras().isEmpty()
                 Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
             } else {
                 if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
 
-                    Bitmap photo = (Bitmap) data.getExtras().get("data");
-                    //Bitmap photo = BitmapFactory.decodeFile(myFilesDir + "/temp.jpg");
+                    //Bitmap photo = (Bitmap) data.getExtras().get("data");
+                    Bitmap photo = BitmapFactory.decodeFile(myFilesDir + "/temp.jpg");
                     ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
                     if (photo != null) {
-                        photo.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+                        photo.compress(Bitmap.CompressFormat.JPEG, 60, stream);
 
                     }
                     byte[] byteArray = stream.toByteArray();
 
-                    String encoded = Base64.encodeToString(byteArray,Base64.DEFAULT);
+                    String encoded = Base64.encodeToString(byteArray,Base64.URL_SAFE|Base64.NO_WRAP);
                     Session.setImageBase64(encoded);
-                    Log.d("base64",Session.getImageBase64());
-                    Log.d("base64-encode",byteArray.toString());
-                    Log.d("base64-decode",Base64.decode(Session.getImageBase64(),Base64.DEFAULT).toString());
-
-
                     result = imageDAO.insert(byteArray, lat, lng, db);
 
                     if (result == -1) {
