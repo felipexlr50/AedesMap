@@ -6,7 +6,7 @@ public  class Session {
     private static double latNow;
     private static double lngNow;
     private static final String APIURL  = "http://aedesmap.16mb.com/";
-    private static final String API_PEGAR_PONTOS = "pegarPontos.php";
+    private static final String API_PEGAR_PONTOS = "Pontos.php";
     private static final String API_SALVAR_PONTOS = "salvarImagem.php";
     private static String imageBase64;
 

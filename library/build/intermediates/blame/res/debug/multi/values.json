@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "outputFile": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 161
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 251
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 331
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 421
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 511
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 591
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 672
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 752
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 832
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 920
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 998
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1086
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1174
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1252
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1331
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1409
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1487
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -327,14 +327,14 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3186,
+                    "startOffset": 3373,
                     "endColumn": 37,
-                    "endOffset": 3219
+                    "endOffset": 3406
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\values\\ids.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\ids.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -346,14 +346,14 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3224,
+                    "startOffset": 3411,
                     "endColumn": 66,
-                    "endOffset": 3286
+                    "endOffset": 3473
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\version.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\version.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -365,14 +365,14 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3291,
+                    "startOffset": 3478,
                     "endColumn": 91,
-                    "endOffset": 3378
+                    "endOffset": 3565
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\auth_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\auth_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -384,14 +384,14 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3383,
+                    "startOffset": 3570,
                     "endColumn": 87,
-                    "endOffset": 3466
+                    "endOffset": 3653
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\auth_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\auth_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -403,14 +403,14 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3471,
+                    "startOffset": 3658,
                     "endColumn": 231,
-                    "endOffset": 3698
+                    "endOffset": 3885
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -422,14 +422,14 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3703,
+                    "startOffset": 3890,
                     "endColumn": 125,
-                    "endOffset": 3824
+                    "endOffset": 4011
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -441,14 +441,14 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 3829,
+                    "startOffset": 4016,
                     "endColumn": 180,
-                    "endOffset": 4005
+                    "endOffset": 4192
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -460,14 +460,14 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4010,
+                    "startOffset": 4197,
                     "endColumn": 124,
-                    "endOffset": 4130
+                    "endOffset": 4317
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -479,14 +479,14 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4135,
+                    "startOffset": 4322,
                     "endColumn": 123,
-                    "endOffset": 4254
+                    "endOffset": 4441
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -498,14 +498,14 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4259,
+                    "startOffset": 4446,
                     "endColumn": 212,
-                    "endOffset": 4467
+                    "endOffset": 4654
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -517,14 +517,14 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4472,
+                    "startOffset": 4659,
                     "endColumn": 214,
-                    "endOffset": 4682
+                    "endOffset": 4869
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -536,14 +536,14 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4687,
+                    "startOffset": 4874,
                     "endColumn": 122,
-                    "endOffset": 4805
+                    "endOffset": 4992
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -555,14 +555,14 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4810,
+                    "startOffset": 4997,
                     "endColumn": 164,
-                    "endOffset": 4970
+                    "endOffset": 5157
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
@@ -574,14 +574,14 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 4975,
+                    "startOffset": 5162,
                     "endColumn": 93,
-                    "endOffset": 5064
+                    "endOffset": 5251
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -593,14 +593,14 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5069,
+                    "startOffset": 5256,
                     "endColumn": 140,
-                    "endOffset": 5205
+                    "endOffset": 5392
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 57,
                         "startColumn": 4,
@@ -612,14 +612,14 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5210,
+                    "startOffset": 5397,
                     "endColumn": 89,
-                    "endOffset": 5295
+                    "endOffset": 5482
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -631,14 +631,14 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5300,
+                    "startOffset": 5487,
                     "endColumn": 102,
-                    "endOffset": 5398
+                    "endOffset": 5585
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -650,14 +650,14 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5403,
+                    "startOffset": 5590,
                     "endColumn": 142,
-                    "endOffset": 5541
+                    "endOffset": 5728
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 90,
                         "startColumn": 4,
@@ -669,14 +669,14 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 5546,
+                    "startOffset": 5733,
                     "endColumn": 99,
-                    "endOffset": 5641
+                    "endOffset": 5828
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -688,14 +688,14 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5646,
+                    "startOffset": 5833,
                     "endColumn": 150,
-                    "endOffset": 5792
+                    "endOffset": 5979
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 84,
                         "startColumn": 4,
@@ -707,14 +707,14 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 5797,
+                    "startOffset": 5984,
                     "endColumn": 91,
-                    "endOffset": 5884
+                    "endOffset": 6071
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -726,14 +726,14 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 5889,
+                    "startOffset": 6076,
                     "endColumn": 218,
-                    "endOffset": 6103
+                    "endOffset": 6290
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\common_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\common_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -745,14 +745,14 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6108,
+                    "startOffset": 6295,
                     "endColumn": 218,
-                    "endOffset": 6322
+                    "endOffset": 6509
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 69,
                         "startColumn": 4,
@@ -764,14 +764,14 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6327,
+                    "startOffset": 6514,
                     "endColumn": 94,
-                    "endOffset": 6417
+                    "endOffset": 6604
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
@@ -783,14 +783,14 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6422,
+                    "startOffset": 6609,
                     "endColumn": 104,
-                    "endOffset": 6522
+                    "endOffset": 6709
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 4,
@@ -802,14 +802,14 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6527,
+                    "startOffset": 6714,
                     "endColumn": 180,
-                    "endOffset": 6703
+                    "endOffset": 6890
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -821,14 +821,14 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 6708,
+                    "startOffset": 6895,
                     "endColumn": 124,
-                    "endOffset": 6828
+                    "endOffset": 7015
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -840,14 +840,14 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 6833,
+                    "startOffset": 7020,
                     "endColumn": 174,
-                    "endOffset": 7003
+                    "endOffset": 7190
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -859,14 +859,14 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 7008,
+                    "startOffset": 7195,
                     "endColumn": 104,
-                    "endOffset": 7108
+                    "endOffset": 7295
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -878,14 +878,14 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 7113,
+                    "startOffset": 7300,
                     "endColumn": 147,
-                    "endOffset": 7256
+                    "endOffset": 7443
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -897,14 +897,14 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 7261,
+                    "startOffset": 7448,
                     "endColumn": 62,
-                    "endOffset": 7319
+                    "endOffset": 7506
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 75,
                         "startColumn": 4,
@@ -916,14 +916,14 @@
             },
             {
                 "to": {
-                    "startLine": 53,
+                    "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 7324,
+                    "startOffset": 7511,
                     "endColumn": 61,
-                    "endOffset": 7381
+                    "endOffset": 7568
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 93,
                         "startColumn": 4,
@@ -935,14 +935,14 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 7386,
+                    "startOffset": 7573,
                     "endColumn": 78,
-                    "endOffset": 7460
+                    "endOffset": 7647
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
                     "position": {
                         "startLine": 96,
                         "startColumn": 4,
@@ -954,15 +954,15 @@
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 7465,
-                    "endLine": 58,
+                    "startOffset": 7652,
+                    "endLine": 79,
                     "endColumn": 12,
-                    "endOffset": 7668
+                    "endOffset": 7855
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\values\\styles.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -975,15 +975,15 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 7673,
-                    "endLine": 61,
+                    "startOffset": 7860,
+                    "endLine": 82,
                     "endColumn": 12,
-                    "endOffset": 7828
+                    "endOffset": 8015
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\values\\styles.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -996,2051 +996,15 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 7833,
-                    "endLine": 66,
+                    "startOffset": 8020,
+                    "endLine": 87,
                     "endColumn": 12,
-                    "endOffset": 8080
+                    "endOffset": 8267
                 },
                 "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 423,
-                        "endLine": 13,
-                        "endColumn": 12,
-                        "endOffset": 670
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/debug/values/values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 60,
-                    "endOffset": 161
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 757,
-                        "endColumn": 60,
-                        "endOffset": 813
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 166,
-                    "endColumn": 89,
-                    "endOffset": 251
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 861,
-                        "endColumn": 89,
-                        "endOffset": 946
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 256,
-                    "endColumn": 79,
-                    "endOffset": 331
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1041,
-                        "endColumn": 79,
-                        "endOffset": 1116
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 336,
-                    "endColumn": 89,
-                    "endOffset": 421
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1121,
-                        "endColumn": 89,
-                        "endOffset": 1206
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 426,
-                    "endColumn": 89,
-                    "endOffset": 511
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 951,
-                        "endColumn": 89,
-                        "endOffset": 1036
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 516,
-                    "endColumn": 79,
-                    "endOffset": 591
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1211,
-                        "endColumn": 79,
-                        "endOffset": 1286
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 596,
-                    "endColumn": 80,
-                    "endOffset": 672
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1371,
-                        "endColumn": 80,
-                        "endOffset": 1447
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 677,
-                    "endColumn": 79,
-                    "endOffset": 752
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1452,
-                        "endColumn": 79,
-                        "endOffset": 1527
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 757,
-                    "endColumn": 79,
-                    "endOffset": 832
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1291,
-                        "endColumn": 79,
-                        "endOffset": 1366
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 837,
-                    "endColumn": 87,
-                    "endOffset": 920
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 102,
-                        "endColumn": 87,
-                        "endOffset": 185
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 925,
-                    "endColumn": 77,
-                    "endOffset": 998
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 278,
-                        "endColumn": 77,
-                        "endOffset": 351
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1003,
-                    "endColumn": 87,
-                    "endOffset": 1086
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 356,
-                        "endColumn": 87,
-                        "endOffset": 439
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1091,
-                    "endColumn": 87,
-                    "endOffset": 1174
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 190,
-                        "endColumn": 87,
-                        "endOffset": 273
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1179,
-                    "endColumn": 77,
-                    "endOffset": 1252
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 444,
-                        "endColumn": 77,
-                        "endOffset": 517
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1257,
-                    "endColumn": 78,
-                    "endOffset": 1331
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 600,
-                        "endColumn": 78,
-                        "endOffset": 674
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1336,
-                    "endColumn": 77,
-                    "endOffset": 1409
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 679,
-                        "endColumn": 77,
-                        "endOffset": 752
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1414,
-                    "endColumn": 77,
-                    "endOffset": 1487
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_colors.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 522,
-                        "endColumn": 77,
-                        "endOffset": 595
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 3186,
-                    "endColumn": 37,
-                    "endOffset": 3219
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/values/ids.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 37,
-                        "endOffset": 88
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 3224,
-                    "endColumn": 66,
-                    "endOffset": 3286
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/version.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 66,
-                        "endOffset": 117
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 3291,
-                    "endColumn": 91,
-                    "endOffset": 3378
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/auth_strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 253,
-                        "endColumn": 91,
-                        "endOffset": 340
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 3383,
-                    "endColumn": 87,
-                    "endOffset": 3466
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/auth_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 109,
-                        "endColumn": 87,
-                        "endOffset": 192
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 3471,
-                    "endColumn": 231,
-                    "endOffset": 3698
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 6029,
-                        "endColumn": 235,
-                        "endOffset": 6260
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 3703,
-                    "endColumn": 125,
-                    "endOffset": 3824
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 2382,
-                        "endColumn": 125,
-                        "endOffset": 2503
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 3829,
-                    "endColumn": 180,
-                    "endOffset": 4005
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 1986,
-                        "endColumn": 184,
-                        "endOffset": 2166
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 4010,
-                    "endColumn": 124,
-                    "endOffset": 4130
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 1710,
-                        "endColumn": 124,
-                        "endOffset": 1830
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 4135,
-                    "endColumn": 123,
-                    "endOffset": 4254
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1439,
-                        "endColumn": 123,
-                        "endOffset": 1558
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 4259,
-                    "endColumn": 212,
-                    "endOffset": 4467
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 742,
-                        "endColumn": 216,
-                        "endOffset": 954
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 4472,
-                    "endColumn": 214,
-                    "endOffset": 4682
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1124,
-                        "endColumn": 218,
-                        "endOffset": 1338
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 4687,
-                    "endColumn": 122,
-                    "endOffset": 4805
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 455,
-                        "endColumn": 122,
-                        "endOffset": 573
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 4810,
-                    "endColumn": 164,
-                    "endOffset": 4970
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 4775,
-                        "endColumn": 164,
-                        "endOffset": 4935
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 4975,
-                    "endColumn": 93,
-                    "endOffset": 5064
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 60,
-                        "startColumn": 4,
-                        "startOffset": 4560,
-                        "endColumn": 93,
-                        "endOffset": 4649
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 5069,
-                    "endColumn": 140,
-                    "endOffset": 5205
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 57,
-                        "startColumn": 4,
-                        "startOffset": 4302,
-                        "endColumn": 140,
-                        "endOffset": 4438
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 5210,
-                    "endColumn": 89,
-                    "endOffset": 5295
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 4099,
-                        "endColumn": 89,
-                        "endOffset": 4184
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 5300,
-                    "endColumn": 102,
-                    "endOffset": 5398
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 205,
-                        "endColumn": 102,
-                        "endOffset": 303
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 5403,
-                    "endColumn": 142,
-                    "endOffset": 5541
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 90,
-                        "startColumn": 4,
-                        "startOffset": 7134,
-                        "endColumn": 142,
-                        "endOffset": 7272
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 40,
-                    "startColumn": 4,
-                    "startOffset": 5546,
-                    "endColumn": 99,
-                    "endOffset": 5641
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 87,
-                        "startColumn": 4,
-                        "startOffset": 6890,
-                        "endColumn": 99,
-                        "endOffset": 6985
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 41,
-                    "startColumn": 4,
-                    "startOffset": 5646,
-                    "endColumn": 150,
-                    "endOffset": 5792
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 84,
-                        "startColumn": 4,
-                        "startOffset": 6599,
-                        "endColumn": 150,
-                        "endOffset": 6745
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 42,
-                    "startColumn": 4,
-                    "startOffset": 5797,
-                    "endColumn": 91,
-                    "endOffset": 5884
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 6384,
-                        "endColumn": 91,
-                        "endOffset": 6471
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 43,
-                    "startColumn": 4,
-                    "startOffset": 5889,
-                    "endColumn": 218,
-                    "endOffset": 6103
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values/common_strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 242,
-                        "endColumn": 222,
-                        "endOffset": 460
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 44,
-                    "startColumn": 4,
-                    "startOffset": 6108,
-                    "endColumn": 218,
-                    "endOffset": 6322
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 69,
-                        "startColumn": 4,
-                        "startOffset": 5305,
-                        "endColumn": 222,
-                        "endOffset": 5523
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 6327,
-                    "endColumn": 94,
-                    "endOffset": 6417
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 66,
-                        "startColumn": 4,
-                        "startOffset": 5073,
-                        "endColumn": 94,
-                        "endOffset": 5163
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 6422,
-                    "endColumn": 104,
-                    "endOffset": 6522
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 72,
-                        "startColumn": 4,
-                        "startOffset": 5622,
-                        "endColumn": 104,
-                        "endOffset": 5722
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 6527,
-                    "endColumn": 180,
-                    "endOffset": 6703
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 2929,
-                        "endColumn": 184,
-                        "endOffset": 3109
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 48,
-                    "startColumn": 4,
-                    "startOffset": 6708,
-                    "endColumn": 124,
-                    "endOffset": 6828
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 2654,
-                        "endColumn": 124,
-                        "endOffset": 2774
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 49,
-                    "startColumn": 4,
-                    "startOffset": 6833,
-                    "endColumn": 174,
-                    "endOffset": 7003
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 51,
-                        "startColumn": 4,
-                        "startOffset": 3811,
-                        "endColumn": 178,
-                        "endOffset": 3985
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 50,
-                    "startColumn": 4,
-                    "startOffset": 7008,
-                    "endColumn": 104,
-                    "endOffset": 7108
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 47,
-                        "startColumn": 4,
-                        "startOffset": 3572,
-                        "endColumn": 104,
-                        "endOffset": 3672
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 7113,
-                    "endColumn": 147,
-                    "endOffset": 7256
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 43,
-                        "startColumn": 4,
-                        "startOffset": 3294,
-                        "endColumn": 147,
-                        "endOffset": 3437
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 52,
-                    "startColumn": 4,
-                    "startOffset": 7261,
-                    "endColumn": 62,
-                    "endOffset": 7319
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 75,
-                        "startColumn": 4,
-                        "startOffset": 5822,
-                        "endColumn": 62,
-                        "endOffset": 5880
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 53,
-                    "startColumn": 4,
-                    "startOffset": 7324,
-                    "endColumn": 61,
-                    "endOffset": 7381
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 93,
-                        "startColumn": 4,
-                        "startOffset": 7327,
-                        "endColumn": 61,
-                        "endOffset": 7384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 54,
-                    "startColumn": 4,
-                    "startOffset": 7386,
-                    "endColumn": 78,
-                    "endOffset": 7460
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values/base_strings.xml",
-                    "position": {
-                        "startLine": 96,
-                        "startColumn": 4,
-                        "startOffset": 7449,
-                        "endColumn": 78,
-                        "endOffset": 7523
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 55,
-                    "startColumn": 4,
-                    "startOffset": 7465,
-                    "endLine": 58,
-                    "endColumn": 12,
-                    "endOffset": 7668
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/values/styles.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 5,
-                        "endColumn": 12,
-                        "endOffset": 258
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 59,
-                    "startColumn": 4,
-                    "startOffset": 7673,
-                    "endLine": 61,
-                    "endColumn": 12,
-                    "endOffset": 7828
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/values/styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 263,
-                        "endLine": 8,
-                        "endColumn": 12,
-                        "endOffset": 418
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 62,
-                    "startColumn": 4,
-                    "startOffset": 7833,
-                    "endLine": 66,
-                    "endColumn": 12,
-                    "endOffset": 8080
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/res/values/styles.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 423,
-                        "endLine": 13,
-                        "endColumn": 12,
-                        "endOffset": 670
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 60,
-                    "endOffset": 161
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 757,
-                        "endColumn": 60,
-                        "endOffset": 813
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 166,
-                    "endColumn": 89,
-                    "endOffset": 251
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 861,
-                        "endColumn": 89,
-                        "endOffset": 946
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 256,
-                    "endColumn": 79,
-                    "endOffset": 331
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1041,
-                        "endColumn": 79,
-                        "endOffset": 1116
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 336,
-                    "endColumn": 89,
-                    "endOffset": 421
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1121,
-                        "endColumn": 89,
-                        "endOffset": 1206
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 426,
-                    "endColumn": 89,
-                    "endOffset": 511
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 951,
-                        "endColumn": 89,
-                        "endOffset": 1036
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 516,
-                    "endColumn": 79,
-                    "endOffset": 591
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1211,
-                        "endColumn": 79,
-                        "endOffset": 1286
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 596,
-                    "endColumn": 80,
-                    "endOffset": 672
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1371,
-                        "endColumn": 80,
-                        "endOffset": 1447
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 677,
-                    "endColumn": 79,
-                    "endOffset": 752
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1452,
-                        "endColumn": 79,
-                        "endOffset": 1527
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 757,
-                    "endColumn": 79,
-                    "endOffset": 832
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1291,
-                        "endColumn": 79,
-                        "endOffset": 1366
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 837,
-                    "endColumn": 87,
-                    "endOffset": 920
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 102,
-                        "endColumn": 87,
-                        "endOffset": 185
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 925,
-                    "endColumn": 77,
-                    "endOffset": 998
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 278,
-                        "endColumn": 77,
-                        "endOffset": 351
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1003,
-                    "endColumn": 87,
-                    "endOffset": 1086
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 356,
-                        "endColumn": 87,
-                        "endOffset": 439
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1091,
-                    "endColumn": 87,
-                    "endOffset": 1174
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 190,
-                        "endColumn": 87,
-                        "endOffset": 273
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1179,
-                    "endColumn": 77,
-                    "endOffset": 1252
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 444,
-                        "endColumn": 77,
-                        "endOffset": 517
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1257,
-                    "endColumn": 78,
-                    "endOffset": 1331
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 600,
-                        "endColumn": 78,
-                        "endOffset": 674
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1336,
-                    "endColumn": 77,
-                    "endOffset": 1409
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 679,
-                        "endColumn": 77,
-                        "endOffset": 752
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1414,
-                    "endColumn": 77,
-                    "endOffset": 1487
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_colors.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 522,
-                        "endColumn": 77,
-                        "endOffset": 595
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 3186,
-                    "endColumn": 37,
-                    "endOffset": 3219
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\ids.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 37,
-                        "endOffset": 88
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 3224,
-                    "endColumn": 66,
-                    "endOffset": 3286
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\version.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 66,
-                        "endOffset": 117
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 3291,
-                    "endColumn": 91,
-                    "endOffset": 3378
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\auth_strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 253,
-                        "endColumn": 91,
-                        "endOffset": 340
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 3383,
-                    "endColumn": 87,
-                    "endOffset": 3466
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\auth_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 109,
-                        "endColumn": 87,
-                        "endOffset": 192
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 3471,
-                    "endColumn": 231,
-                    "endOffset": 3698
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 6029,
-                        "endColumn": 235,
-                        "endOffset": 6260
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 3703,
-                    "endColumn": 125,
-                    "endOffset": 3824
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 2382,
-                        "endColumn": 125,
-                        "endOffset": 2503
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 3829,
-                    "endColumn": 180,
-                    "endOffset": 4005
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 1986,
-                        "endColumn": 184,
-                        "endOffset": 2166
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 4010,
-                    "endColumn": 124,
-                    "endOffset": 4130
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 1710,
-                        "endColumn": 124,
-                        "endOffset": 1830
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 4135,
-                    "endColumn": 123,
-                    "endOffset": 4254
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1439,
-                        "endColumn": 123,
-                        "endOffset": 1558
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 4259,
-                    "endColumn": 212,
-                    "endOffset": 4467
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 742,
-                        "endColumn": 216,
-                        "endOffset": 954
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 4472,
-                    "endColumn": 214,
-                    "endOffset": 4682
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1124,
-                        "endColumn": 218,
-                        "endOffset": 1338
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 4687,
-                    "endColumn": 122,
-                    "endOffset": 4805
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 455,
-                        "endColumn": 122,
-                        "endOffset": 573
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 4810,
-                    "endColumn": 164,
-                    "endOffset": 4970
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 4775,
-                        "endColumn": 164,
-                        "endOffset": 4935
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 4975,
-                    "endColumn": 93,
-                    "endOffset": 5064
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 60,
-                        "startColumn": 4,
-                        "startOffset": 4560,
-                        "endColumn": 93,
-                        "endOffset": 4649
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 5069,
-                    "endColumn": 140,
-                    "endOffset": 5205
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 57,
-                        "startColumn": 4,
-                        "startOffset": 4302,
-                        "endColumn": 140,
-                        "endOffset": 4438
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 5210,
-                    "endColumn": 89,
-                    "endOffset": 5295
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 4099,
-                        "endColumn": 89,
-                        "endOffset": 4184
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 5300,
-                    "endColumn": 102,
-                    "endOffset": 5398
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 205,
-                        "endColumn": 102,
-                        "endOffset": 303
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 5403,
-                    "endColumn": 142,
-                    "endOffset": 5541
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 90,
-                        "startColumn": 4,
-                        "startOffset": 7134,
-                        "endColumn": 142,
-                        "endOffset": 7272
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 40,
-                    "startColumn": 4,
-                    "startOffset": 5546,
-                    "endColumn": 99,
-                    "endOffset": 5641
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 87,
-                        "startColumn": 4,
-                        "startOffset": 6890,
-                        "endColumn": 99,
-                        "endOffset": 6985
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 41,
-                    "startColumn": 4,
-                    "startOffset": 5646,
-                    "endColumn": 150,
-                    "endOffset": 5792
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 84,
-                        "startColumn": 4,
-                        "startOffset": 6599,
-                        "endColumn": 150,
-                        "endOffset": 6745
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 42,
-                    "startColumn": 4,
-                    "startOffset": 5797,
-                    "endColumn": 91,
-                    "endOffset": 5884
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 6384,
-                        "endColumn": 91,
-                        "endOffset": 6471
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 43,
-                    "startColumn": 4,
-                    "startOffset": 5889,
-                    "endColumn": 218,
-                    "endOffset": 6103
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values\\common_strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 242,
-                        "endColumn": 222,
-                        "endOffset": 460
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 44,
-                    "startColumn": 4,
-                    "startOffset": 6108,
-                    "endColumn": 218,
-                    "endOffset": 6322
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 69,
-                        "startColumn": 4,
-                        "startOffset": 5305,
-                        "endColumn": 222,
-                        "endOffset": 5523
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 6327,
-                    "endColumn": 94,
-                    "endOffset": 6417
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 66,
-                        "startColumn": 4,
-                        "startOffset": 5073,
-                        "endColumn": 94,
-                        "endOffset": 5163
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 6422,
-                    "endColumn": 104,
-                    "endOffset": 6522
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 72,
-                        "startColumn": 4,
-                        "startOffset": 5622,
-                        "endColumn": 104,
-                        "endOffset": 5722
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 6527,
-                    "endColumn": 180,
-                    "endOffset": 6703
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 2929,
-                        "endColumn": 184,
-                        "endOffset": 3109
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 48,
-                    "startColumn": 4,
-                    "startOffset": 6708,
-                    "endColumn": 124,
-                    "endOffset": 6828
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 2654,
-                        "endColumn": 124,
-                        "endOffset": 2774
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 49,
-                    "startColumn": 4,
-                    "startOffset": 6833,
-                    "endColumn": 174,
-                    "endOffset": 7003
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 51,
-                        "startColumn": 4,
-                        "startOffset": 3811,
-                        "endColumn": 178,
-                        "endOffset": 3985
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 50,
-                    "startColumn": 4,
-                    "startOffset": 7008,
-                    "endColumn": 104,
-                    "endOffset": 7108
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 47,
-                        "startColumn": 4,
-                        "startOffset": 3572,
-                        "endColumn": 104,
-                        "endOffset": 3672
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 7113,
-                    "endColumn": 147,
-                    "endOffset": 7256
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 43,
-                        "startColumn": 4,
-                        "startOffset": 3294,
-                        "endColumn": 147,
-                        "endOffset": 3437
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 52,
-                    "startColumn": 4,
-                    "startOffset": 7261,
-                    "endColumn": 62,
-                    "endOffset": 7319
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 75,
-                        "startColumn": 4,
-                        "startOffset": 5822,
-                        "endColumn": 62,
-                        "endOffset": 5880
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 53,
-                    "startColumn": 4,
-                    "startOffset": 7324,
-                    "endColumn": 61,
-                    "endOffset": 7381
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 93,
-                        "startColumn": 4,
-                        "startOffset": 7327,
-                        "endColumn": 61,
-                        "endOffset": 7384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 54,
-                    "startColumn": 4,
-                    "startOffset": 7386,
-                    "endColumn": 78,
-                    "endOffset": 7460
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values\\base_strings.xml",
-                    "position": {
-                        "startLine": 96,
-                        "startColumn": 4,
-                        "startOffset": 7449,
-                        "endColumn": 78,
-                        "endOffset": 7523
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 55,
-                    "startColumn": 4,
-                    "startOffset": 7465,
-                    "endLine": 58,
-                    "endColumn": 12,
-                    "endOffset": 7668
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 5,
-                        "endColumn": 12,
-                        "endOffset": 258
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 59,
-                    "startColumn": 4,
-                    "startOffset": 7673,
-                    "endLine": 61,
-                    "endColumn": 12,
-                    "endOffset": 7828
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 263,
-                        "endLine": 8,
-                        "endColumn": 12,
-                        "endOffset": 418
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 62,
-                    "startColumn": 4,
-                    "startOffset": 7833,
-                    "endLine": 66,
-                    "endColumn": 12,
-                    "endOffset": 8080
-                },
-                "from": {
-                    "file": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\styles.xml",
+                    "file": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,

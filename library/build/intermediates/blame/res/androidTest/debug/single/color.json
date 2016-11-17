@@ -1,50 +1,18 @@
 [
     {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/androidTest/debug/color/common_plus_signin_btn_text_light.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_plus_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/androidTest/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/androidTest/debug/color/common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\desenvolvedor2\\Desktop\\AndroidProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/res/merged/androidTest/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/library/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/color/common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/desenvolvedor2/Desktop/AndroidProjects/AedesMap2/C:\\Users\\Felipe\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\FelipeXLR\\AndroidStudioProjects\\AedesMap\\library\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_light.xml"
     }
 ]

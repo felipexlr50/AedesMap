@@ -40,12 +40,13 @@ import android.widget.Toast;
 import com.example.felipe.aedesmap.DAO.BaseDAO;
 import com.example.felipe.aedesmap.DAO.ImageDAO;
 import com.example.felipe.aedesmap.MAP.ClusteringMap;
-import com.example.felipe.aedesmap.handlers.APIKeyGen;
 import com.example.felipe.aedesmap.handlers.InternetConnection;
 import com.example.felipe.aedesmap.model.Session;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -79,8 +80,6 @@ public class MenuActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Log.d("SHA",APIKeyGen.getSHA256("123"));
-
         myFilesDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Android/data/com.example.felipe.aedesmap/files");
         myFilesDir.mkdirs();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -89,7 +88,6 @@ public class MenuActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 drawer.openDrawer(GravityCompat.START);
-                APIKeyGen.getAPIKEY();
             }
         });
 
@@ -125,14 +123,14 @@ public class MenuActivity extends AppCompatActivity
     }
 
     public void onCreateCamera(View v) {
-        //if(lat!=0 || lng!=0) {
+        if(lat!=0 || lng!=0) {
         Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         camera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(myFilesDir.toString()+"/temp.jpg")));
         startActivityForResult(camera, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
-        // }
-        //  else{
-        //Toast.makeText(MenuActivity.this, this.getString(R.string.cameraWarning), Toast.LENGTH_SHORT).show();
-        // }
+         }
+          else{
+        Toast.makeText(MenuActivity.this, this.getString(R.string.cameraWarning), Toast.LENGTH_SHORT).show();
+         }
     }
 
     @Override
@@ -145,7 +143,7 @@ public class MenuActivity extends AppCompatActivity
             int result = 0;
             // DateFormat format = new SimpleDateFormat("yyyy-mm-dd hh:MM:ss");
 
-            if (false) {  //data.getExtras().isEmpty()
+            if (false) {
                 Toast.makeText(MenuActivity.this, this.getString(R.string.imageCanceled), Toast.LENGTH_SHORT).show();
             } else {
                 if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
@@ -162,14 +160,8 @@ public class MenuActivity extends AppCompatActivity
 
                     String encoded = Base64.encodeToString(byteArray,Base64.URL_SAFE|Base64.NO_WRAP);
                     Session.setImageBase64(encoded);
-                    result = imageDAO.insert(byteArray, lat, lng, db);
-
-                    if (result == -1) {
-                        Toast.makeText(this, this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
-                        Log.d("byte", "Imagem nao salva");
-                    } else
-                       // insertPosition();
-                        insertPositionToServer();
+                    imageDAO.insert(byteArray, lat, lng, db);
+                    insertPositionToServer();
                     db.close();
                 }
             }
@@ -390,15 +382,8 @@ public class MenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        /*if (id == R.id.nav_add) {
-            onClickAddPosition();
-
-
-        } else*/ if (id == R.id.nav_mapa) {
-
+       if (id == R.id.nav_mapa) {
             onClickOpenMap();
-            Log.d("menu","teste2");
-
         } else if(id == R.id.nav_getPos){
 
             onClickGetPosition();
@@ -408,13 +393,8 @@ public class MenuActivity extends AppCompatActivity
             onClickOpenInfo();
 
         } else if(id == R.id.nav_graph){
-
-           // startActivity(new Intent(this,GraphAcitivity.class));
             startActivity(new Intent(this,NewGraphView.class));
-
         }
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -459,10 +439,24 @@ public class MenuActivity extends AppCompatActivity
         @Override
         protected void onPostExecute(String result) {
 
-            progressBar.setVisibility(View.INVISIBLE);
-            Toast.makeText(MenuActivity.this, MenuActivity.this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
-            Log.d("byte", "Imagem salva");
-        }
+            try {
+                JSONObject json = new JSONObject(result);
 
+                int status = json.getInt("status");
+
+                if(status==0){
+                    Toast.makeText(MenuActivity.this, MenuActivity.this.getString(R.string.imageNotSaved), Toast.LENGTH_LONG).show();
+                    Log.d("byte", "Imagem nao salva");
+                }
+                else {
+                    Toast.makeText(MenuActivity.this, MenuActivity.this.getString(R.string.imageSaved), Toast.LENGTH_LONG).show();
+                    Log.d("byte", "Imagem salva");
+                }
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            progressBar.setVisibility(View.INVISIBLE);
+        }
     }
 }

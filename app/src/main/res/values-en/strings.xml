@@ -41,4 +41,5 @@
     <string name="title_activity_graph_acitivity">Data</string>
     <string name="title_graph">Plot data</string>
     <string name="graphTitle">Historic Serie</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

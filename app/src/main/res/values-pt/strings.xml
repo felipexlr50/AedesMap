@@ -41,4 +41,5 @@
     <string name="title_activity_graph_acitivity">Dados</string>
     <string name="title_graph">Mostrar dados</string>
     <string name="graphTitle">Série histórica</string>
+    <string name="title_activity_maps">Mapa</string>
 </resources>

@@ -80,9 +80,6 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         protected void onBeforeClusterItemRendered(MyItem myItem, MarkerOptions markerOptions) {
             // Draw a single person.
             // Set the info window to show their name.
-
-            mImageView.setImageBitmap(myItem.getImage());
-            Bitmap icon = mIconGenerator.makeIcon();
             //markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon));
             markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.mosquitoicon3));
             super.onBeforeClusterItemRendered(myItem,markerOptions);
@@ -164,17 +161,12 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
         if(c.moveToFirst()){
 
             do {
-                byte[] bytes=c.getBlob(c.getColumnIndex(ImageDAO.IMGBLOB));
+
                 lat = c.getDouble(c.getColumnIndex(ImageDAO.LAT));
                 lng = c.getDouble(c.getColumnIndex(ImageDAO.LGN));
                 Log.d("banco", lat + " - " + lng);
 
-                Bitmap imagemBD = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                    Log.d("image",new String(bytes, StandardCharsets.UTF_8));
-                }
-
-                MyItem itens = new MyItem(lat, lng,imagemBD);
+                MyItem itens = new MyItem(lat, lng);
                 mClusterManager.addItem(itens);
             }while(c.moveToNext());
         }
@@ -208,15 +200,14 @@ public class ClusteringMap extends BaseDemoActivity implements ClusterManager.On
 
         try {
             JSONObject json = new JSONObject(response);
-            JSONArray jarray = json.getJSONArray("info");
+            JSONArray jarray = json.getJSONArray("data");
 
             for (int i = 0; i < jarray.length(); i++) {
                 JSONObject oneObject = jarray.getJSONObject(i);
                 lat = Double.parseDouble(oneObject.getString("latitude"));
                 lng = Double.parseDouble(oneObject.getString("longitude"));
-                String imgString = oneObject.getString("imgString");
                 Log.d("LatTeste","Lat: "+lat+"  lng:"+lng);
-                MyItem itens = new MyItem(lat, lng,imgString);
+                MyItem itens = new MyItem(lat, lng);
                 mClusterManager.addItem(itens);
             }
 

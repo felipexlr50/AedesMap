@@ -2,7 +2,7 @@
     <string name="app_name">AedesMap</string>
     <string name="action_settings">Configurações</string>
     <string name="title_activity_google_maps">Mapa</string>
-    <string name="google_maps_apiv2" translatable="false">AIzaSyCU_1j9bnUQ6aR49Z8CNkRM5jWpWCSm0as</string>
+    <string name="google_maps_apiv2" translatable="false">AIzaSyDiPxSvoUUXY1icVSTEaUdBvkrTFywh0Kc</string>
     <string name="title_activity_menu">Menu</string>
 
     <string name="navigation_drawer_open">Abrir gaveta de navegação</string>
@@ -45,5 +45,6 @@
     <string name="occurrence">Ocorrências</string>
     <string name="title_activity_graph_acitivity">Dados</string>
     <string name="graphTitle">Série histórica</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
